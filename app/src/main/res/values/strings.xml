@@ -1,0 +1,716 @@
+﻿<resources>
+    <string name="app_name" translatable="false">Orbit</string>
+
+    <!-- Common actions -->
+    <string name="action_save">Save</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_create">Create</string>
+    <string name="action_add">Add</string>
+    <string name="action_remove">Remove</string>
+    <string name="action_retry">Retry</string>
+    <string name="action_confirm">Confirm</string>
+    <string name="action_close">Close</string>
+    <string name="action_back">Back</string>
+    <string name="action_next">Next</string>
+    <string name="action_done">Done</string>
+    <string name="action_send">Send</string>
+    <string name="action_search">Search</string>
+    <string name="action_upload">Upload</string>
+    <string name="action_download">Download</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_view_all">View all</string>
+    <string name="action_login">Sign in</string>
+    <string name="action_logout">Log out</string>
+
+    <!-- Errors -->
+    <string name="error_unauthorized">Session expired. Please sign in again.</string>
+    <string name="error_forbidden">You don\'t have permission to do that.</string>
+    <string name="error_not_found">The requested item was not found.</string>
+    <string name="error_timeout">The server took too long to respond.</string>
+    <string name="error_no_connection">Can\'t reach the server. Check your connection.</string>
+    <string name="error_server">Server error. Please try again later.</string>
+
+    <!-- States -->
+    <string name="state_loading">Loading…</string>
+    <string name="state_error_generic">Something went wrong. Please try again.</string>
+    <string name="state_empty_title">Nothing here yet</string>
+    <string name="state_empty_desc">There is no data to show right now.</string>
+    <string name="state_online">Online</string>
+    <string name="state_offline">Offline</string>
+
+    <!-- Fields -->
+    <string name="field_email">Email</string>
+    <string name="field_password">Password</string>
+    <string name="field_name">Name</string>
+    <string name="field_search_hint">Search…</string>
+
+    <!-- Theme -->
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_system">System</string>
+
+    <!-- Accessibility -->
+    <string name="cd_orbit_logo">Orbit logo</string>
+    <string name="cd_avatar">User avatar</string>
+    <string name="cd_notifications">Notifications</string>
+    <string name="cd_show_password">Show password</string>
+    <string name="cd_hide_password">Hide password</string>
+
+    <!-- Boot -->
+    <string name="boot_starting">Starting up…</string>
+    <string name="boot_connecting_title">Connecting to server…</string>
+    <string name="boot_connecting_desc">The API server isn\'t responding.\nMake sure it\'s running and retry.</string>
+    <string name="boot_retry_now">Retry now</string>
+
+    <!-- Brand panel -->
+    <string name="brand_headline">Quality management for the modern institution.</string>
+    <string name="brand_subcopy">AI-powered accreditation workflows, project tracking, and team collaboration — all in one workspace.</string>
+    <string name="brand_feature_1">AI-powered quality control and scoring</string>
+    <string name="brand_feature_2">Multi-team project and task management</string>
+    <string name="brand_feature_3">Accreditation report workflows</string>
+    <string name="brand_feature_4">Real-time analytics and insights</string>
+    <string name="brand_status_ok">All systems operational</string>
+
+    <!-- Onboarding (mirrors the web landing page) -->
+    <string name="onb_skip">Skip</string>
+    <string name="onb_next">Next</string>
+    <string name="onb_launch">Launch Orbit</string>
+    <string name="onb_badge" translatable="false">Workspace · AI · Quality · Analytics</string>
+    <string name="onb_hero_line1">Your Workspace.</string>
+    <string name="onb_hero_line2">In Perfect Orbit.</string>
+    <string name="onb_hero_desc">An AI-powered platform for workspace management, project delivery, team collaboration, and quality assurance.</string>
+    <string name="onb_stat_teams">Teams</string>
+    <string name="onb_stat_projects">Projects</string>
+    <string name="onb_stat_uptime">Uptime</string>
+    <string name="onb_stat_ai">AI Monitor</string>
+    <string name="onb_stat_teams_val" translatable="false">10K+</string>
+    <string name="onb_stat_projects_val" translatable="false">250K+</string>
+    <string name="onb_stat_uptime_val" translatable="false">99.9%</string>
+    <string name="onb_stat_ai_val" translatable="false">24/7</string>
+    <string name="onb_f1_tag" translatable="false">WORKSPACE</string>
+    <string name="onb_f1_title">Unified Workspaces</string>
+    <string name="onb_f1_desc">One source of truth for all your teams, groups, and departments.</string>
+    <string name="onb_f2_tag" translatable="false">QUALITY AI</string>
+    <string name="onb_f2_title">AI Intelligence Layer</string>
+    <string name="onb_f2_desc">Embedded AI reviews quality, surfaces risks, and recommends actions.</string>
+    <string name="onb_f3_tag" translatable="false">ANALYTICS</string>
+    <string name="onb_f3_title">Analytics Across the Galaxy</string>
+    <string name="onb_f3_desc">From task completions to accreditation scores — in one dashboard.</string>
+
+    <!-- Login -->
+    <string name="login_title">Sign in to Orbit</string>
+    <string name="login_subtitle">Enter your credentials to continue.</string>
+    <string name="login_email_label">Email address</string>
+    <string name="login_email_placeholder" translatable="false">you@example.com</string>
+    <string name="login_password_label">Password</string>
+    <string name="login_password_placeholder" translatable="false">••••••••</string>
+    <string name="login_button">Sign in</string>
+    <string name="login_button_loading">Signing in…</string>
+    <string name="login_error_default">Invalid email or password</string>
+    <string name="login_footer">Access is restricted to authorized personnel.\nContact your administrator to request access.</string>
+
+    <!-- Setup -->
+    <string name="setup_title">Create Founder account</string>
+    <string name="setup_subtitle">This runs once. After completion, this page is permanently disabled.</string>
+    <string name="setup_full_name">Full name</string>
+    <string name="setup_name_placeholder">e.g. Alex Carter</string>
+    <string name="setup_email_placeholder" translatable="false">founder@example.com</string>
+    <string name="setup_password_placeholder">At least 8 characters</string>
+    <string name="setup_confirm_label">Confirm password</string>
+    <string name="setup_confirm_placeholder">Re-enter password</string>
+    <string name="setup_mismatch">Passwords do not match</string>
+    <string name="setup_pw_min_error">Password must be at least 8 characters.</string>
+    <string name="setup_pw_too_short">Too short</string>
+    <string name="setup_pw_weak">Weak</string>
+    <string name="setup_pw_fair">Fair</string>
+    <string name="setup_pw_strong">Strong</string>
+    <string name="setup_pw_very_strong">Very strong</string>
+    <string name="setup_privilege_notice">This account will have Founder privileges — full platform access.</string>
+    <string name="setup_submit">Create Founder Account</string>
+    <string name="setup_submitting">Creating account…</string>
+    <string name="setup_exists">A Founder account already exists. Please sign in.</string>
+    <string name="setup_done_title">Founder account created</string>
+    <string name="setup_done_desc">Setup is complete. Redirecting to sign in…</string>
+    <string name="setup_have_account">Already have an account?</string>
+
+    <!-- Nav -->
+    <string name="nav_command_center">Command Center</string>
+    <string name="nav_subadmin_portal">SubAdmin Portal</string>
+    <string name="nav_it_console">IT Console</string>
+    <string name="nav_qc_dashboard">QC Dashboard</string>
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_workspace">Workspace</string>
+    <string name="nav_projects">Projects</string>
+    <string name="nav_my_projects">My Projects</string>
+    <string name="nav_public_channel">Public Channel</string>
+    <string name="nav_tasks">Tasks</string>
+    <string name="nav_calendar">Calendar</string>
+    <string name="nav_team">Team</string>
+    <string name="nav_my_team">My Team</string>
+    <string name="nav_reports">Reports</string>
+    <string name="nav_quality_control">Quality Control</string>
+    <string name="nav_quality_insights">Quality Insights</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_user_management">User Management</string>
+    <string name="nav_it_accounts">IT Accounts</string>
+    <string name="nav_credentials">Credentials</string>
+    <string name="nav_more">More</string>
+
+    <!-- Page titles -->
+    <string name="title_create_task">Create Task</string>
+    <string name="title_teams">Teams</string>
+    <string name="title_portfolio">Portfolio</string>
+    <string name="title_taskmaster">Task Master</string>
+    <string name="title_channel">Channel</string>
+    <string name="title_board">Workspace</string>
+    <string name="title_session_logs">Session Logs</string>
+    <string name="title_task_details">Task Details</string>
+    <string name="title_help">Help Center</string>
+
+    <!-- Notifications -->
+    <string name="notif_title">Notifications</string>
+    <string name="notif_unread_count">%1$d unread</string>
+    <string name="notif_mark_all">Mark all read</string>
+    <string name="notif_empty">All caught up! 🎉</string>
+    <string name="notif_just_now">Just now</string>
+
+    <!-- Profile menu -->
+    <string name="profile_settings">Profile Settings</string>
+
+    <!-- Temp -->
+    <string name="state_coming_soon">This screen is coming in a later phase.</string>
+
+    <!-- Dashboard shared -->
+    <string name="dash_welcome_back">Welcome back, %1$s</string>
+    <string name="dash_view_all">View all →</string>
+    <string name="dash_quick_actions">Quick Actions</string>
+    <string name="dash_upcoming_deadlines">Upcoming Deadlines</string>
+    <string name="dash_no_deadlines">No upcoming deadlines.</string>
+    <string name="dash_today">Today</string>
+    <string name="dash_days_late">%1$dd late</string>
+    <string name="dash_days_short">%1$dd</string>
+    <string name="dash_days_left">%1$dd left</string>
+    <string name="dash_days_remaining">%1$dd remaining</string>
+    <string name="dash_days_overdue">%1$dd overdue</string>
+    <string name="dash_due_today_excl">Due today</string>
+    <string name="dash_on_track">▲ On Track</string>
+    <string name="dash_building">→ Building</string>
+    <string name="dash_moderate">→ Moderate</string>
+    <string name="dash_lagging">▼ Lagging</string>
+
+    <!-- Staff dashboard -->
+    <string name="dash_loading_demo">Loading demo data for first run…</string>
+    <string name="dash_active_tasks_pill">%1$d Active Tasks</string>
+    <string name="dash_overdue_pill">%1$d Overdue</string>
+    <string name="dash_projects_pill">%1$d Projects</string>
+    <string name="dash_public_channel"># Public Channel</string>
+    <string name="dash_kpi_my_tasks">My Tasks</string>
+    <string name="dash_kpi_overdue">Overdue</string>
+    <string name="dash_kpi_done">Done</string>
+    <string name="dash_kpi_projects">Projects</string>
+    <string name="dash_kpi_due_today">Due Today</string>
+    <string name="dash_kpi_productivity">Productivity</string>
+    <string name="dash_my_tasks">My Tasks</string>
+    <string name="dash_active_done">%1$d active · %2$d completed</string>
+    <string name="dash_no_active_tasks">No active tasks right now.</string>
+    <string name="dash_sorted_due">Sorted by due date</string>
+    <string name="dash_productivity_trend">Productivity Trend</string>
+    <string name="dash_7w_completion">7-week completion rate</string>
+    <string name="dash_workload">Workload Distribution</string>
+    <string name="dash_by_status">Tasks by status</string>
+    <string name="dash_score">Score</string>
+    <string name="dash_risk">%1$s Risk</string>
+    <string name="dash_my_projects">My Projects</string>
+    <string name="dash_no_projects_assigned">No projects assigned yet.</string>
+    <string name="dash_my_stats">My Stats</string>
+    <string name="dash_completion">Completion</string>
+    <string name="dash_on_time">On-Time</string>
+    <string name="dash_avg_progress">Avg Progress</string>
+
+    <!-- Admin dashboard -->
+    <string name="dash_seeding_admin">Seeding enterprise demo data for first run…</string>
+    <string name="dash_exec_title">Executive Command Center</string>
+    <string name="dash_action_new_project">+ Project</string>
+    <string name="dash_action_analytics">Analytics</string>
+    <string name="dash_action_reports">Reports</string>
+    <string name="dash_action_channels">Channels</string>
+    <string name="dash_workspace_health">Workspace Health</string>
+    <string name="dash_health_excellent">Excellent</string>
+    <string name="dash_health_moderate">Moderate</string>
+    <string name="dash_health_critical">Critical</string>
+    <string name="kpi_total_projects">Total Projects</string>
+    <string name="kpi_active_projects">Active Projects</string>
+    <string name="kpi_delayed">Delayed Projects</string>
+    <string name="kpi_completion_rate">Completion Rate</string>
+    <string name="kpi_ai_pass">AI Review Pass%%</string>
+    <string name="kpi_productivity">Productivity</string>
+    <string name="kpi_online">Online Members</string>
+    <string name="kpi_avg_progress">Avg Progress</string>
+    <string name="dash_project_health">Project Health Overview</string>
+    <string name="dash_ph_sub">Progress rings · real-time status · team overview</string>
+    <string name="dash_channels_label">Channels</string>
+    <string name="dash_live">LIVE</string>
+    <string name="dash_no_projects">No projects yet.</string>
+    <string name="health_healthy">Healthy</string>
+    <string name="health_at_risk">At Risk</string>
+    <string name="health_blocked">Blocked</string>
+    <string name="dash_status_distribution">Status Distribution</string>
+    <string name="status_active">Active</string>
+    <string name="status_completed">Completed</string>
+    <string name="status_on_hold">On Hold</string>
+    <string name="dash_donut_projects">projects</string>
+    <string name="dash_risk_summary">Risk Summary</string>
+    <string name="risk_overdue">Overdue</string>
+    <string name="risk_at_risk">At Risk</string>
+    <string name="risk_healthy">Healthy</string>
+    <string name="risk_members">Members</string>
+    <string name="dash_heatmap_title">Workspace Activity Heatmap</string>
+    <string name="dash_heatmap_sub">Audit events over recent weeks</string>
+    <string name="dash_total_events">Total Events</string>
+    <string name="dash_active_days">Active Days</string>
+    <string name="dash_peak_day">Peak Day</string>
+    <string name="dash_live_activity">Live Activity</string>
+    <string name="dash_recent_events">%1$d recent events</string>
+    <string name="dash_no_activity">No activity yet.</string>
+    <string name="dash_projects_by_team">Projects by Team</string>
+    <string name="dash_pbt_sub">Distribution across team leads</string>
+    <string name="dash_weekly_trend">Weekly Progress Trend</string>
+    <string name="dash_wt_sub">Average workspace progress over 7 weeks</string>
+    <string name="dash_start">Start</string>
+    <string name="dash_now">Now</string>
+    <string name="dash_ai_insights">AI Intelligence Insights</string>
+    <string name="dash_ai_sub">Generated from real workspace data</string>
+    <string name="dash_no_insights">No insights available yet.</string>
+    <string name="ins_deadline_title">Deadline Alert</string>
+    <string name="ins_deadline_body">%1$d projects are overdue. Immediate attention required.</string>
+    <string name="ins_completion_title">Completion Rate</string>
+    <string name="ins_completion_body">%1$d%% of projects completed. Workspace is on track.</string>
+    <string name="ins_blocked_title">Blocked Projects</string>
+    <string name="ins_blocked_body">%1$d projects are on hold. Review blockers with team leads.</string>
+    <string name="ins_activity_title">High Activity</string>
+    <string name="ins_activity_body">%1$d of %2$d members currently active — peak collaboration window.</string>
+    <string name="ins_progress_title">Strong Progress</string>
+    <string name="ins_progress_body">Workspace averaging %1$d%% progress across all projects. Excellent execution.</string>
+    <string name="ins_low_progress_title">Low Progress</string>
+    <string name="ins_low_progress_body">Average progress is only %1$d%%. Consider reviewing project velocity.</string>
+    <string name="ins_ai_title">Strong AI Reviews</string>
+    <string name="ins_ai_body">%1$d%% estimated pass rate on quality reviews. Standards are being met.</string>
+    <string name="ins_engagement_title">High Engagement</string>
+    <string name="ins_engagement_body">%1$d recent workspace events. Team is highly engaged.</string>
+    <string name="dash_top_performers">Top Performers</string>
+    <string name="dash_perf_meta">%1$s · %2$d tasks · %3$d projects</string>
+    <string name="dash_workspace_stats">Workspace Stats</string>
+    <string name="stats_total_members">Total Members</string>
+    <string name="stats_online_now">Online Now</string>
+    <string name="stats_on_hold">On Hold</string>
+
+    <!-- Projects page -->
+    <string name="pj_tab_overview">Overview</string>
+    <string name="pj_recent">Recent Projects</string>
+    <string name="pj_teams_count">%1$d teams in this workspace</string>
+    <string name="pj_create_title">Create Project</string>
+    <string name="pj_edit_title">Edit Project</string>
+    <string name="pj_create_sub">New Initiative</string>
+    <string name="pj_name_label">Project Name</string>
+    <string name="pj_name_placeholder">e.g. Q4 Marketing Campaign</string>
+    <string name="pj_status_label">Status</string>
+    <string name="pj_desc_label">Description</string>
+    <string name="pj_desc_placeholder">What is this project about?</string>
+    <string name="pj_progress_label">Progress</string>
+    <string name="pj_due_label">Timeline (Due Date)</string>
+    <string name="pj_due_placeholder">Pick a due date</string>
+    <string name="pj_sub_managers">Sub Managers</string>
+    <string name="pj_sub_managers_sub">Select sub-managers</string>
+    <string name="pj_no_sub_managers">No sub-managers available.</string>
+    <string name="pj_staff">Project Teams (Staff)</string>
+    <string name="pj_staff_sub">Select team members (Staff)</string>
+    <string name="pj_no_staff">No staff accounts available yet.</string>
+    <string name="pj_selected_count">%1$d selected</string>
+    <string name="pj_create_button">Create Project</string>
+    <string name="pj_delete_title">Delete project?</string>
+    <string name="pj_delete_message">"%1$s" will be permanently deleted.</string>
+    <string name="pj_no_description">No description provided</string>
+
+    <!-- Teams -->
+    <string name="tm_create_title">Create Team</string>
+    <string name="tm_edit_title">Edit Team</string>
+    <string name="tm_name_label">Team Name</string>
+    <string name="tm_name_placeholder">Enter team name</string>
+    <string name="tm_desc_placeholder">What does this team do?</string>
+    <string name="tm_managers">Managers</string>
+    <string name="tm_managers_sub">Select managers</string>
+    <string name="tm_no_users">No users available.</string>
+    <string name="tm_members_title">Team Members</string>
+    <string name="tm_no_members">No members found for this team.</string>
+    <string name="tm_unknown_user">Unknown User</string>
+    <string name="tm_edit_members_title">Edit Members</string>
+    <string name="tm_delete_title">Delete team?</string>
+    <string name="tm_delete_message">"%1$s" will be permanently deleted.</string>
+    <string name="tm_no_teams">No teams found.</string>
+    <string name="tm_no_description">No description provided.</string>
+    <string name="tm_members_count">%1$d Members</string>
+    <string name="tm_view_members">View Members</string>
+    <string name="tm_page_sub">View and manage workspace teams.</string>
+    <string name="tm_view_details">View Team Details</string>
+    <string name="tm_back_to_teams">Back to Teams</string>
+    <string name="tm_details_no_description">No description provided for this team.</string>
+    <string name="tm_no_email">No email provided</string>
+
+    <!-- Staff projects -->
+    <string name="sp_active_pill">%1$d Active</string>
+    <string name="sp_done_pill">%1$d Completed</string>
+    <string name="sp_filter_all">All</string>
+    <string name="sp_no_filtered">No matching projects</string>
+    <string name="sp_admin_assign">Your admin will assign you to projects soon.</string>
+    <string name="sp_try_filter">Try a different filter.</string>
+
+    <!-- Team page -->
+    <string name="tp_leaderboard_title">Performance Leaderboard</string>
+    <string name="tp_leaderboard_sub">Live scores from workspace analytics</string>
+    <string name="tp_top_performer">Top Performer</string>
+    <string name="tp_top_reason">Score %1$d/100 · %2$d tasks done</string>
+    <string name="tp_most_helpful">Most Helpful</string>
+    <string name="tp_helpful_reason">%1$d completed tasks · %2$d projects</string>
+    <string name="tp_best_ai">Best AI Quality</string>
+    <string name="tp_ai_reason">AI pass rate: %1$d%%</string>
+    <string name="tp_role_chart_title">Avg Tasks by Role</string>
+    <string name="tp_role_chart_sub">Average completed tasks per role group</string>
+    <string name="tp_tasks_pill">%1$d tasks</string>
+    <string name="tp_ai_pill">AI %1$d%%</string>
+    <string name="tp_score_label">Score</string>
+    <string name="tp_stat_done">Tasks Completed</string>
+    <string name="tp_stat_in_progress">In Progress</string>
+    <string name="tp_stat_review">In Review</string>
+    <string name="tp_stat_total">Total Tasks</string>
+    <string name="tp_ai_quality">AI Quality</string>
+    <string name="tp_no_data">No data</string>
+
+    <!-- Tasks page -->
+    <string name="tk_completion_title">Project Completion</string>
+    <string name="tk_completion_sub">Overall status across 17 active tasks</string>
+    <string name="tk_stat_completed">%1$d Completed</string>
+    <string name="tk_stat_in_progress">%1$d In Progress</string>
+    <string name="tk_stat_remaining">%1$d Remaining</string>
+    <string name="tk_showing">Showing %1$d of 37 tasks</string>
+    <string name="tk_status_completed">Completed</string>
+    <string name="tk_status_not_completed">Not Completed Yet</string>
+    <string name="tk_unassigned">Unassigned</string>
+    <string name="tk_analyze_ai">Analyze with AI</string>
+    <string name="tk_analysis_title">AI Analysis</string>
+    <string name="tk_analyzing">Running AI analysis…</string>
+    <string name="tk_compliance_score">Compliance score</string>
+    <string name="tk_passed">Passed Standards</string>
+    <string name="tk_failed">Failed Standards</string>
+    <string name="tk_suggestions">Suggestions</string>
+
+    <!-- Create task -->
+    <string name="ct_title">Create New Task</string>
+    <string name="ct_subtitle">Add a new task to your workspace</string>
+    <string name="ct_name_label">Task Name</string>
+    <string name="ct_name_placeholder">Enter task name</string>
+    <string name="ct_priority_label">Priority</string>
+    <string name="ct_priority_low">Low</string>
+    <string name="ct_priority_medium">Medium</string>
+    <string name="ct_priority_high">High</string>
+    <string name="ct_team_label">Responsible Team</string>
+    <string name="ct_new_team">+ New Team</string>
+    <string name="ct_assignees_label">Assignees &amp; Visibility</string>
+    <string name="ct_loading_members">Loading team members…</string>
+    <string name="ct_search_members">Search members…</string>
+    <string name="ct_select_all">Select All Team Members</string>
+    <string name="ct_visibility_label">Visibility:</string>
+    <string name="ct_visibility_team">Team</string>
+    <string name="ct_visibility_private">Private</string>
+    <string name="ct_report_type_label">Report Type (optional)</string>
+    <string name="ct_report_type_placeholder">e.g. course_spec, program_spec…</string>
+    <string name="ct_details_label">Task Details</string>
+    <string name="ct_details_placeholder">Enter task details and description</string>
+    <string name="ct_submit">Create Task</string>
+    <string name="ct_select_team_error">Please select a team.</string>
+    <string name="ct_select_assignee_error">Please select at least one assignee.</string>
+
+    <!-- Workspace board -->
+    <string name="ws_col_todo">To Do</string>
+    <string name="ws_col_in_progress">In Progress</string>
+    <string name="ws_col_review">Review</string>
+    <string name="ws_col_done">Done</string>
+    <string name="ws_add_task">Add task</string>
+    <string name="ws_new_task_placeholder">Task title…</string>
+    <string name="ws_panel_team">Team</string>
+    <string name="ws_panel_chat">Chat</string>
+    <string name="ws_panel_files">Files</string>
+    <string name="ws_panel_ai">AI</string>
+    <string name="ws_no_messages">No messages yet. Start the conversation!</string>
+    <string name="ws_message_placeholder">Write a message… use @ to mention</string>
+    <string name="ws_replying_to">Replying to %1$s</string>
+    <string name="ws_upload_file">Upload file</string>
+    <string name="ws_no_files">No files uploaded yet.</string>
+    <string name="ws_add_member">Add</string>
+    <string name="ws_no_responsibility">No responsibility set</string>
+    <string name="ws_responsibility_placeholder">Responsibility…</string>
+    <string name="ws_completed_by">Done by: %1$s</string>
+    <string name="ws_delete_task_title">Delete task?</string>
+    <string name="ws_delete_task_message">This task will be permanently deleted.</string>
+    <string name="ws_tab_info">Info</string>
+    <string name="ws_tab_discussion">Discussion</string>
+    <string name="ws_meta_assignee">Assignee</string>
+    <string name="ws_meta_due">Due</string>
+    <string name="ws_meta_visibility">Visibility</string>
+    <string name="ws_meta_completed_by">Completed by</string>
+    <string name="ws_meta_submitted_by">Submitted by</string>
+    <string name="ws_ai_hint">AI review submissions and history arrive with the AI Review phase.</string>
+
+    <!-- Channels -->
+    <string name="ch_online_count">%1$d online</string>
+    <string name="ch_tab_feed">Feed</string>
+    <string name="ch_tab_members">Members</string>
+    <string name="ch_tab_activity">Activity</string>
+    <string name="ch_type_announcement">📢 Announcement</string>
+    <string name="ch_type_task">📋 Task</string>
+    <string name="ch_type_note">📝 Note</string>
+    <string name="ch_post_title_placeholder">Post title…</string>
+    <string name="ch_post_content_placeholder">Write something… use @ to mention</string>
+    <string name="ch_publish">Publish</string>
+    <string name="ch_reply">Reply</string>
+    <string name="ch_reply_placeholder">Write a reply…</string>
+
+    <!-- AI review -->
+    <string name="ai_submit_title">AI Quality Check</string>
+    <string name="ai_report_type">Report Type</string>
+    <string name="ai_pick_type">Pick a report type…</string>
+    <string name="ai_files_label">Documents (PDF/Word)</string>
+    <string name="ai_add_files">Add Files</string>
+    <string name="ai_add_images">Add Images</string>
+    <string name="ai_images_count">%1$d images attached</string>
+    <string name="ai_notes_label">Submission Notes</string>
+    <string name="ai_notes_placeholder">Anything the reviewer should know…</string>
+    <string name="ai_run_check">Run AI Quality Check</string>
+    <string name="ai_evaluating">Evaluating your submission…</string>
+    <string name="ai_passed_title">Quality Check Passed</string>
+    <string name="ai_failed_title">Quality Check Failed</string>
+    <string name="ai_auto_submit">Submitting to QC Review in %1$d…</string>
+    <string name="ai_failed_sub">Fix the issues below and try again.</string>
+    <string name="ai_type_compliance">Report Type Compliance</string>
+    <string name="ai_missing_elements">Missing: %1$s</string>
+    <string name="ai_submit_button">Submit for AI Review</string>
+    <string name="ai_history_title">Recent Evaluations</string>
+    <string name="ai_no_history">No AI evaluations yet.</string>
+    <string name="ai_template_title">Report Template</string>
+    <string name="ai_template_sub">Download the official template for this report type.</string>
+    <string name="ai_template_ar">Template (AR)</string>
+    <string name="ai_template_en">Template (EN)</string>
+    <string name="ai_verdict_title">QC Verdict</string>
+    <string name="ai_verdict_pending">Pending QC Review</string>
+    <string name="ai_verdict_accepted">Accepted</string>
+    <string name="ai_verdict_none">Not submitted yet.</string>
+
+    <!-- Chatbot -->
+    <string name="bot_title">Orbit AI</string>
+    <string name="bot_subtitle">Your workspace assistant</string>
+    <string name="bot_greeting">Hi! I\'m **Orbit AI** — ask me anything about your workspace, tasks, or quality reports.</string>
+    <string name="bot_placeholder">Ask Orbit AI…</string>
+
+    <!-- Calendar -->
+    <string name="ev_new">Event</string>
+    <string name="ev_create_title">Create Event</string>
+    <string name="ev_edit_title">Edit Event</string>
+    <string name="ev_title_label">Title</string>
+    <string name="ev_title_placeholder">Event title…</string>
+    <string name="ev_type_label">Event Type</string>
+    <string name="ev_type_meeting">Meeting</string>
+    <string name="ev_type_project_deadline">Project Deadline</string>
+    <string name="ev_type_review_session">Review Session</string>
+    <string name="ev_type_training_session">Training Session</string>
+    <string name="ev_type_quality_audit">Quality Audit</string>
+    <string name="ev_type_team_event">Team Event</string>
+    <string name="ev_type_reminder">Reminder</string>
+    <string name="ev_type_personal_event">Personal</string>
+    <string name="ev_type_task_deadline">Task Deadline</string>
+    <string name="ev_type_milestone">Milestone</string>
+    <string name="ev_start_date">Start Date</string>
+    <string name="ev_end_date">End Date</string>
+    <string name="ev_start_time">Start Time</string>
+    <string name="ev_end_time">End Time</string>
+    <string name="ev_desc_placeholder">What is this event about?</string>
+    <string name="ev_location_label">Location</string>
+    <string name="ev_location_placeholder">Room, building, city…</string>
+    <string name="ev_link_label">Meeting Link</string>
+    <string name="ev_visibility_label">Visibility</string>
+    <string name="ev_vis_project">Project Members</string>
+    <string name="ev_vis_workspace">Workspace</string>
+    <string name="ev_reminder_label">Reminder</string>
+    <string name="ev_rem_15">15m before</string>
+    <string name="ev_rem_60">1h before</string>
+    <string name="ev_rem_720">12h before</string>
+    <string name="ev_rem_1440">1d before</string>
+    <string name="ev_recurrence_label">Recurrence</string>
+    <string name="ev_rec_none">None</string>
+    <string name="ev_rec_daily">Daily</string>
+    <string name="ev_rec_weekly">Weekly</string>
+    <string name="ev_rec_monthly">Monthly</string>
+    <string name="ev_rec_yearly">Yearly</string>
+    <string name="ev_color_label">Color</string>
+    <string name="ev_attendees_label">Attendees</string>
+    <string name="ev_no_events">No events on this day.</string>
+    <string name="ev_rsvp_label">RSVP</string>
+    <string name="ev_rsvp_attending">Attending</string>
+    <string name="ev_rsvp_tentative">Maybe</string>
+    <string name="ev_rsvp_declined">Decline</string>
+
+    <!-- QC suite -->
+    <string name="qc_tab_intelligence">Intelligence</string>
+    <string name="qc_tab_standards">Standards</string>
+    <string name="qc_tab_evaluations">Evaluations</string>
+    <string name="qc_kpi_evaluations">Evaluations</string>
+    <string name="qc_kpi_avg_score">Avg Score</string>
+    <string name="qc_kpi_standards">Active Standards</string>
+    <string name="qc_kpi_pass_rate">Pass Rate</string>
+    <string name="qc_bottlenecks_title">Review Bottlenecks</string>
+    <string name="qc_bottlenecks_sub">Slowest review stages by average hours</string>
+    <string name="qc_hours">%1$dh avg</string>
+    <string name="qc_trend_title">Score Trend</string>
+    <string name="qc_trend_sub">Average compliance score over time</string>
+    <string name="qc_heatmap_title">Evaluation Activity</string>
+    <string name="qc_heatmap_sub">Last 16 weeks of evaluations</string>
+    <string name="qc_new_standard">New Standard</string>
+    <string name="qc_edit_standard">Edit Standard</string>
+    <string name="qc_no_standards">No standards defined yet.</string>
+    <string name="qc_standard_placeholder">Standard title…</string>
+    <string name="qc_rules_title">Rules</string>
+    <string name="qc_rules_count">%1$d rules</string>
+    <string name="qc_rule_label">Rule label…</string>
+    <string name="qc_rule_instructions">Instructions (optional)…</string>
+    <string name="qc_rule_weight">Weight %1$d%%</string>
+    <string name="qc_add_rule">Add Rule</string>
+    <string name="qc_archive">Archive</string>
+    <string name="qc_project_scores">Project Scores</string>
+    <string name="qc_project_scores_sub">Average AI score per project</string>
+    <string name="qc_export_title">Export Reports</string>
+    <string name="qc_export_csv">Export CSV</string>
+    <string name="qc_export_pdf">Export PDF</string>
+    <string name="qi_subtitle">Quality overview for the last 60 days.</string>
+    <string name="qi_trend_sub">Last 60 days</string>
+    <string name="qi_download_title">Download Reports</string>
+
+    <!-- Reports & portals -->
+    <string name="rp_workspace_health">Workspace Health</string>
+    <string name="rp_overdue_projects">Overdue Projects</string>
+    <string name="rp_total_tasks">Total Tasks</string>
+    <string name="rp_done_tasks">Done Tasks</string>
+    <string name="rp_overdue_tasks">Overdue Tasks</string>
+    <string name="rp_due_today">Due Today</string>
+    <string name="rp_quality_reviews">Quality Reviews</string>
+    <string name="rp_quality_pass">Pass Rate</string>
+    <string name="rp_projects_sub">Live progress across the workspace</string>
+    <string name="rp_tasks_meta">%1$d of %2$d tasks done</string>
+    <string name="sa_projects_sub">Your projects with AI scores</string>
+    <string name="sa_team_title">Team Distribution</string>
+    <string name="pf_stats_title">Performance</string>
+
+    <!-- IT suite -->
+    <string name="it_create_user">Create User</string>
+    <string name="it_edit_user">Edit User</string>
+    <string name="it_role_label">Role</string>
+    <string name="it_status_label">Account Status</string>
+    <string name="it_status_active">Active</string>
+    <string name="it_status_suspended">Suspended</string>
+    <string name="it_reset_password">Reset Password</string>
+    <string name="it_new_password">New Password</string>
+    <string name="it_force_logout">Force Logout</string>
+    <string name="it_delete_user_title">Delete user?</string>
+    <string name="it_delete_user_message">"%1$s" will be permanently deleted.</string>
+    <string name="it_role_matrix">Role Matrix</string>
+    <string name="it_role_matrix_sub">What each platform role can access</string>
+    <string name="role_desc_founder">Full platform control, entities, IT accounts</string>
+    <string name="role_desc_it">User management, sessions, system settings</string>
+    <string name="role_desc_admin">Workspace, projects, QC and user management</string>
+    <string name="role_desc_manager">Projects, team and reports</string>
+    <string name="role_desc_subadmin">Manages assigned members and their tasks</string>
+    <string name="role_desc_staff">Own tasks, public channel and calendar</string>
+    <string name="role_desc_qc">Quality insights, standards and evaluations</string>
+    <string name="it_section_users">Users</string>
+    <string name="it_section_roles">Roles</string>
+    <string name="it_section_security">Security</string>
+    <string name="it_section_audit">Audit</string>
+    <string name="it_section_health">Health</string>
+    <string name="it_active_sessions">Active Sessions</string>
+    <string name="it_error_rate">Error Rate</string>
+    <string name="it_storage">Storage</string>
+    <string name="it_security_sub">Account suspension and global logout</string>
+    <string name="it_security_hint">Force-logout suspends the account; reactivate it from the Users section. Global logout enables maintenance mode.</string>
+    <string name="it_logout_all">Log Out All Users</string>
+    <string name="it_logout_all_message">This enables maintenance mode and signs everyone out.</string>
+    <string name="it_settings_title">System Settings</string>
+    <string name="it_maintenance_mode">Maintenance Mode</string>
+    <string name="it_maintenance_sub">Blocks all non-IT logins while enabled</string>
+    <string name="it_max_upload">Max Upload Size (MB)</string>
+    <string name="it_sessions_sub">%1$d sessions recorded</string>
+    <string name="it_duration">%1$dm</string>
+    <string name="it_my_sessions">My Sessions</string>
+    <string name="it_credentials_sub">Plain-text registry of issued accounts</string>
+    <string name="it_download_file">Download File</string>
+
+    <!-- Founder suite -->
+    <string name="fd_platform_health">Platform Health</string>
+    <string name="fd_entities">Entities</string>
+    <string name="fd_active_now">Active Now</string>
+    <string name="fd_pending_evals">Pending AI Evals</string>
+    <string name="fd_total_reports">Total Reports</string>
+    <string name="fd_financials">Financials</string>
+    <string name="fd_financials_sub">Monthly recurring revenue and tiers</string>
+    <string name="fd_mrr">Monthly Recurring Revenue</string>
+    <string name="fd_ai_trends">AI Trends (7 days)</string>
+    <string name="fd_ai_trends_sub">Accepted evaluations per day</string>
+    <string name="fd_accepted">Accepted</string>
+    <string name="fd_rejected">Rejected</string>
+    <string name="fd_alerts">System Alerts</string>
+    <string name="fd_no_alerts">No alerts — all systems nominal.</string>
+    <string name="fd_frameworks">Quality Frameworks</string>
+    <string name="fd_new_framework">New Framework</string>
+    <string name="fd_edit_framework">Edit Framework</string>
+    <string name="fd_framework_placeholder">Framework name…</string>
+    <string name="fd_prompt_label">AI Prompt Template</string>
+    <string name="fd_prompt_placeholder">Instructions the AI evaluator follows…</string>
+    <string name="fd_threshold">Threshold %1$d%%</string>
+    <string name="fd_new_entity">New Entity</string>
+    <string name="fd_entity_placeholder">Entity name…</string>
+    <string name="fd_entity_meta">%1$d users · %2$d IT staff</string>
+    <string name="fd_assign_it">Assign IT — %1$s</string>
+    <string name="fd_new_it_account">New IT Account</string>
+    <string name="fd_toggle_status">Toggle status</string>
+
+    <!-- Help center -->
+    <string name="help_subtitle">Guides and support for the Orbit workspace.</string>
+    <string name="help_start_title">Getting Started</string>
+    <string name="help_start_body">Sign in with the account your administrator issued, then use the bottom navigation to reach your dashboard, projects and settings.</string>
+    <string name="help_projects_title">Projects &amp; Boards</string>
+    <string name="help_projects_body">Open a project to use its Kanban board, chat, files and members. Move tasks across To Do, In Progress, Review and Done.</string>
+    <string name="help_ai_title">AI Quality Review</string>
+    <string name="help_ai_body">Submit PDF or Word reports for an AI compliance check. A score of 70%% or higher is auto-submitted to QC review.</string>
+    <string name="help_channels_title">Channels</string>
+    <string name="help_channels_body">Use the Public Channel for announcements, tasks and notes. Mention teammates with @ and react to posts.</string>
+    <string name="help_support_title">Support</string>
+    <string name="help_support_body">Need help? Contact your IT staff or administrator from the Team page.</string>
+
+    <!-- Settings -->
+    <string name="st_tab_profile">Profile</string>
+    <string name="st_tab_security">Security</string>
+    <string name="st_tab_appearance">Appearance</string>
+    <string name="st_upload_avatar">Upload Photo</string>
+    <string name="st_remove_avatar">Remove</string>
+    <string name="st_profile_details">Profile Details</string>
+    <string name="st_bio">Bio</string>
+    <string name="st_job_title">Job Title</string>
+    <string name="st_department">Department</string>
+    <string name="st_country">Country</string>
+    <string name="st_timezone">Timezone</string>
+    <string name="st_saved">Saved ✓</string>
+    <string name="st_change_password">Change Password</string>
+    <string name="st_notif_sub">Stored on this device</string>
+    <string name="st_notif_push">Push notifications</string>
+    <string name="st_notif_email">Email notifications</string>
+    <string name="st_notif_mentions">Mention alerts</string>
+    <string name="st_appearance_sub">Default is Dark when nothing is stored</string>
+</resources>

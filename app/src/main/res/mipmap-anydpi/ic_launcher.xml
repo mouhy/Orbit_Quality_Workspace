@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Legacy launcher (API < 26) -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Brand background -->
+    <item
+        android:width="48dp"
+        android:height="48dp"
+        android:gravity="center"
+        android:drawable="@color/ic_launcher_background" />
+
+    <!-- Centered logo (aspect-preserved) -->
+    <item
+        android:width="28dp"
+        android:height="20dp"
+        android:gravity="center"
+        android:drawable="@drawable/orbit_logo_mark" />
+
+</layer-list>

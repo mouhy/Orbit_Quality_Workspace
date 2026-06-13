@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Splash icon -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Icon canvas (288dp keeps the logo inside the splash safe zone) -->
+    <item
+        android:width="288dp"
+        android:height="288dp"
+        android:gravity="center"
+        android:drawable="@android:color/transparent" />
+
+    <!-- Centered logo (150x106 preserves the 1.41 source aspect ratio) -->
+    <item
+        android:width="150dp"
+        android:height="106dp"
+        android:gravity="center"
+        android:drawable="@drawable/orbit_logo_mark" />
+
+</layer-list>

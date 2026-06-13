@@ -1,0 +1,23 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Background -->
+    <path
+        android:fillColor="#0F1220"
+        android:pathData="M20,0 L88,0 A20,20 0 0,1 108,20 L108,88 A20,20 0 0,1 88,108 L20,108 A20,20 0 0,1 0,88 L0,20 A20,20 0 0,1 20,0 Z" />
+
+    <!-- Orbit ring -->
+    <path
+        android:strokeColor="#F0F4F9"
+        android:strokeWidth="9"
+        android:fillColor="#00000000"
+        android:pathData="M54,30 A24,24 0 1,1 53.9,30 Z" />
+
+    <!-- Glow dot -->
+    <path
+        android:fillColor="#1D6EF5"
+        android:pathData="M72,26 m-8,0 a8,8 0 1,1 16,0 a8,8 0 1,1 -16,0" />
+</vector>

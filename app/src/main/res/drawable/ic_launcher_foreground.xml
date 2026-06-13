@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Launcher foreground -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Centered logo (58x41 preserves the 1.41 aspect ratio inside the 72dp safe zone) -->
+    <item
+        android:width="58dp"
+        android:height="41dp"
+        android:gravity="center"
+        android:drawable="@drawable/orbit_logo_mark" />
+
+</layer-list>

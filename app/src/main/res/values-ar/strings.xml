@@ -1,0 +1,703 @@
+﻿<resources>
+    <!-- Common actions -->
+    <string name="action_save">حفظ</string>
+    <string name="action_cancel">إلغاء</string>
+    <string name="action_delete">حذف</string>
+    <string name="action_edit">تعديل</string>
+    <string name="action_create">إنشاء</string>
+    <string name="action_add">ضيف</string>
+    <string name="action_remove">شيل</string>
+    <string name="action_retry">جرّب تاني</string>
+    <string name="action_confirm">تأكيد</string>
+    <string name="action_close">قفل</string>
+    <string name="action_back">رجوع</string>
+    <string name="action_next">التالي</string>
+    <string name="action_done">تم</string>
+    <string name="action_send">ابعت</string>
+    <string name="action_search">دوّر</string>
+    <string name="action_upload">ارفع</string>
+    <string name="action_download">نزّل</string>
+    <string name="action_refresh">حدّث</string>
+    <string name="action_view_all">شوف الكل</string>
+    <string name="action_login">تسجيل الدخول</string>
+    <string name="action_logout">تسجيل الخروج</string>
+
+    <!-- Errors -->
+    <string name="error_unauthorized">الجلسة خلصت، سجّل دخولك تاني.</string>
+    <string name="error_forbidden">معندكش صلاحية تعمل كده.</string>
+    <string name="error_not_found">العنصر المطلوب مش موجود.</string>
+    <string name="error_timeout">السيرفر اتأخر في الرد.</string>
+    <string name="error_no_connection">مش قادرين نوصل للسيرفر، اتأكد من النت.</string>
+    <string name="error_server">حصل خطأ في السيرفر، جرّب بعدين.</string>
+
+    <!-- States -->
+    <string name="state_loading">بيحمّل…</string>
+    <string name="state_error_generic">حصل خطأ، جرّب تاني.</string>
+    <string name="state_empty_title">مفيش حاجة هنا لسه</string>
+    <string name="state_empty_desc">مفيش بيانات نعرضها دلوقتي.</string>
+    <string name="state_online">متصل</string>
+    <string name="state_offline">مش متصل</string>
+
+    <!-- Fields -->
+    <string name="field_email">الإيميل</string>
+    <string name="field_password">كلمة السر</string>
+    <string name="field_name">الاسم</string>
+    <string name="field_search_hint">دوّر هنا…</string>
+
+    <!-- Theme -->
+    <string name="theme_light">فاتح</string>
+    <string name="theme_dark">غامق</string>
+    <string name="theme_system">زي النظام</string>
+
+    <!-- Accessibility -->
+    <string name="cd_orbit_logo">لوجو Orbit</string>
+    <string name="cd_avatar">صورة المستخدم</string>
+    <string name="cd_notifications">الإشعارات</string>
+    <string name="cd_show_password">إظهار كلمة السر</string>
+    <string name="cd_hide_password">إخفاء كلمة السر</string>
+
+    <!-- Boot -->
+    <string name="boot_starting">بيشتغل…</string>
+    <string name="boot_connecting_title">بنحاول نوصل للسيرفر…</string>
+    <string name="boot_connecting_desc">سيرفر الـ API مش بيرد.\nاتأكد إنه شغال وجرّب تاني.</string>
+    <string name="boot_retry_now">جرّب دلوقتي</string>
+
+    <!-- Brand panel -->
+    <string name="brand_headline">إدارة جودة للمؤسسات العصرية.</string>
+    <string name="brand_subcopy">مراجعات اعتماد بالذكاء الاصطناعي، متابعة مشاريع، وشغل جماعي — كله في مساحة واحدة.</string>
+    <string name="brand_feature_1">مراقبة جودة وتقييم بالذكاء الاصطناعي</string>
+    <string name="brand_feature_2">إدارة مشاريع ومهام لفرق متعددة</string>
+    <string name="brand_feature_3">مسارات تقارير الاعتماد الأكاديمي</string>
+    <string name="brand_feature_4">تحليلات ورؤى لحظية</string>
+    <string name="brand_status_ok">كل الأنظمة شغالة</string>
+
+    <!-- Onboarding (مطابقة لصفحة الهبوط) -->
+    <string name="onb_skip">تخطّي</string>
+    <string name="onb_next">التالي</string>
+    <string name="onb_launch">أطلِق Orbit</string>
+    <string name="onb_hero_line1">مساحة عملك.</string>
+    <string name="onb_hero_line2">في مدار مثالي.</string>
+    <string name="onb_hero_desc">منصة مدعومة بالذكاء الاصطناعي لإدارة مساحات العمل وتسليم المشاريع وتعاون الفِرَق وضمان الجودة.</string>
+    <string name="onb_stat_teams">فِرَق</string>
+    <string name="onb_stat_projects">مشاريع</string>
+    <string name="onb_stat_uptime">تشغيل</string>
+    <string name="onb_stat_ai">مراقبة AI</string>
+    <string name="onb_f1_title">مساحات عمل موحّدة</string>
+    <string name="onb_f1_desc">مصدر واحد للحقيقة لكل فِرَقك ومجموعاتك وأقسامك.</string>
+    <string name="onb_f2_title">طبقة ذكاء اصطناعي</string>
+    <string name="onb_f2_desc">ذكاء مدمج بيراجع الجودة، بيكشف المخاطر، وبيقترح الإجراءات.</string>
+    <string name="onb_f3_title">تحليلات عبر المجرّة</string>
+    <string name="onb_f3_desc">من إنجاز المهام لدرجات الاعتماد — في لوحة واحدة.</string>
+
+    <!-- Login -->
+    <string name="login_title">سجّل دخولك في Orbit</string>
+    <string name="login_subtitle">اكتب بياناتك عشان تكمل.</string>
+    <string name="login_email_label">الإيميل</string>
+    <string name="login_password_label">كلمة السر</string>
+    <string name="login_button">تسجيل الدخول</string>
+    <string name="login_button_loading">بنسجّل دخولك…</string>
+    <string name="login_error_default">الإيميل أو كلمة السر غلط</string>
+    <string name="login_footer">الدخول للمصرّح لهم بس.\nكلم الأدمن لو محتاج صلاحية.</string>
+
+    <!-- Setup -->
+    <string name="setup_title">إنشاء حساب المؤسس</string>
+    <string name="setup_subtitle">بيشتغل مرة واحدة بس، وبعدها الصفحة دي بتتقفل نهائي.</string>
+    <string name="setup_full_name">الاسم بالكامل</string>
+    <string name="setup_name_placeholder">مثلاً: أحمد محمد</string>
+    <string name="setup_password_placeholder">8 حروف على الأقل</string>
+    <string name="setup_confirm_label">تأكيد كلمة السر</string>
+    <string name="setup_confirm_placeholder">اكتب كلمة السر تاني</string>
+    <string name="setup_mismatch">كلمتين السر مش زي بعض</string>
+    <string name="setup_pw_min_error">كلمة السر لازم تكون 8 حروف على الأقل.</string>
+    <string name="setup_pw_too_short">قصيرة أوي</string>
+    <string name="setup_pw_weak">ضعيفة</string>
+    <string name="setup_pw_fair">مقبولة</string>
+    <string name="setup_pw_strong">قوية</string>
+    <string name="setup_pw_very_strong">قوية جداً</string>
+    <string name="setup_privilege_notice">الحساب ده هياخد صلاحيات المؤسس — تحكم كامل في المنصة.</string>
+    <string name="setup_submit">إنشاء حساب المؤسس</string>
+    <string name="setup_submitting">بننشئ الحساب…</string>
+    <string name="setup_exists">في حساب مؤسس موجود بالفعل، سجّل دخولك.</string>
+    <string name="setup_done_title">تم إنشاء حساب المؤسس</string>
+    <string name="setup_done_desc">الإعداد خلص، بنحوّلك لتسجيل الدخول…</string>
+    <string name="setup_have_account">عندك حساب بالفعل؟</string>
+
+    <!-- Nav -->
+    <string name="nav_command_center">مركز القيادة</string>
+    <string name="nav_subadmin_portal">بوابة السب أدمن</string>
+    <string name="nav_it_console">كونسول الـ IT</string>
+    <string name="nav_qc_dashboard">لوحة مراقبة الجودة</string>
+    <string name="nav_dashboard">الرئيسية</string>
+    <string name="nav_workspace">مساحة العمل</string>
+    <string name="nav_projects">المشاريع</string>
+    <string name="nav_my_projects">مشاريعي</string>
+    <string name="nav_public_channel">القناة العامة</string>
+    <string name="nav_tasks">المهام</string>
+    <string name="nav_calendar">التقويم</string>
+    <string name="nav_team">الفريق</string>
+    <string name="nav_my_team">فريقي</string>
+    <string name="nav_reports">التقارير</string>
+    <string name="nav_quality_control">مراقبة الجودة</string>
+    <string name="nav_quality_insights">رؤى الجودة</string>
+    <string name="nav_settings">الإعدادات</string>
+    <string name="nav_user_management">إدارة المستخدمين</string>
+    <string name="nav_it_accounts">حسابات الـ IT</string>
+    <string name="nav_credentials">بيانات الدخول</string>
+    <string name="nav_more">المزيد</string>
+
+    <!-- Page titles -->
+    <string name="title_create_task">إنشاء مهمة</string>
+    <string name="title_teams">الفرق</string>
+    <string name="title_portfolio">البورتفوليو</string>
+    <string name="title_taskmaster">إدارة المهام</string>
+    <string name="title_channel">القناة</string>
+    <string name="title_board">مساحة العمل</string>
+    <string name="title_session_logs">سجل الجلسات</string>
+    <string name="title_task_details">تفاصيل المهمة</string>
+    <string name="title_help">مركز المساعدة</string>
+
+    <!-- Notifications -->
+    <string name="notif_title">الإشعارات</string>
+    <string name="notif_unread_count">%1$d غير مقروء</string>
+    <string name="notif_mark_all">عيّن الكل كمقروء</string>
+    <string name="notif_empty">مفيش جديد! 🎉</string>
+    <string name="notif_just_now">دلوقتي حالاً</string>
+
+    <!-- Profile menu -->
+    <string name="profile_settings">إعدادات البروفايل</string>
+
+    <!-- Temp -->
+    <string name="state_coming_soon">الشاشة دي جاية في مرحلة لاحقة.</string>
+
+    <!-- Dashboard shared -->
+    <string name="dash_welcome_back">أهلاً بيك تاني يا %1$s</string>
+    <string name="dash_view_all">شوف الكل ←</string>
+    <string name="dash_quick_actions">إجراءات سريعة</string>
+    <string name="dash_upcoming_deadlines">المواعيد النهائية الجاية</string>
+    <string name="dash_no_deadlines">مفيش مواعيد نهائية قريبة.</string>
+    <string name="dash_today">النهارده</string>
+    <string name="dash_days_late">متأخر %1$d يوم</string>
+    <string name="dash_days_short">%1$d يوم</string>
+    <string name="dash_days_left">فاضل %1$d يوم</string>
+    <string name="dash_days_remaining">فاضل %1$d يوم</string>
+    <string name="dash_days_overdue">متأخر %1$d يوم</string>
+    <string name="dash_due_today_excl">آخره النهارده</string>
+    <string name="dash_on_track">▲ ماشي صح</string>
+    <string name="dash_building">→ لسه بيبني</string>
+    <string name="dash_moderate">→ متوسط</string>
+    <string name="dash_lagging">▼ متأخر</string>
+
+    <!-- Staff dashboard -->
+    <string name="dash_loading_demo">بنحمّل بيانات تجريبية لأول مرة…</string>
+    <string name="dash_active_tasks_pill">%1$d مهمة نشطة</string>
+    <string name="dash_overdue_pill">%1$d متأخرة</string>
+    <string name="dash_projects_pill">%1$d مشروع</string>
+    <string name="dash_public_channel"># القناة العامة</string>
+    <string name="dash_kpi_my_tasks">مهامي</string>
+    <string name="dash_kpi_overdue">متأخر</string>
+    <string name="dash_kpi_done">خلص</string>
+    <string name="dash_kpi_projects">مشاريع</string>
+    <string name="dash_kpi_due_today">آخرها النهارده</string>
+    <string name="dash_kpi_productivity">الإنتاجية</string>
+    <string name="dash_my_tasks">مهامي</string>
+    <string name="dash_active_done">%1$d نشطة · %2$d مكتملة</string>
+    <string name="dash_no_active_tasks">مفيش مهام نشطة دلوقتي.</string>
+    <string name="dash_sorted_due">مرتبة بتاريخ التسليم</string>
+    <string name="dash_productivity_trend">منحنى الإنتاجية</string>
+    <string name="dash_7w_completion">نسبة الإنجاز في آخر 7 أسابيع</string>
+    <string name="dash_workload">توزيع الشغل</string>
+    <string name="dash_by_status">المهام حسب الحالة</string>
+    <string name="dash_score">النتيجة</string>
+    <string name="dash_risk">خطر %1$s</string>
+    <string name="dash_my_projects">مشاريعي</string>
+    <string name="dash_no_projects_assigned">لسه مفيش مشاريع متعينة ليك.</string>
+    <string name="dash_my_stats">إحصائياتي</string>
+    <string name="dash_completion">الإنجاز</string>
+    <string name="dash_on_time">في الميعاد</string>
+    <string name="dash_avg_progress">متوسط التقدم</string>
+
+    <!-- Admin dashboard -->
+    <string name="dash_seeding_admin">بنجهّز بيانات تجريبية لأول تشغيل…</string>
+    <string name="dash_exec_title">مركز القيادة التنفيذي</string>
+    <string name="dash_action_new_project">+ مشروع</string>
+    <string name="dash_action_analytics">تحليلات</string>
+    <string name="dash_action_reports">تقارير</string>
+    <string name="dash_action_channels">القنوات</string>
+    <string name="dash_workspace_health">صحة مساحة العمل</string>
+    <string name="dash_health_excellent">ممتازة</string>
+    <string name="dash_health_moderate">متوسطة</string>
+    <string name="dash_health_critical">حرجة</string>
+    <string name="kpi_total_projects">إجمالي المشاريع</string>
+    <string name="kpi_active_projects">مشاريع نشطة</string>
+    <string name="kpi_delayed">مشاريع متأخرة</string>
+    <string name="kpi_completion_rate">نسبة الإنجاز</string>
+    <string name="kpi_ai_pass">نسبة نجاح الـ AI</string>
+    <string name="kpi_productivity">الإنتاجية</string>
+    <string name="kpi_online">أعضاء متصلين</string>
+    <string name="kpi_avg_progress">متوسط التقدم</string>
+    <string name="dash_project_health">نظرة على صحة المشاريع</string>
+    <string name="dash_ph_sub">حلقات تقدم · حالة لحظية · نظرة على الفريق</string>
+    <string name="dash_channels_label">القنوات</string>
+    <string name="dash_live">مباشر</string>
+    <string name="dash_no_projects">مفيش مشاريع لسه.</string>
+    <string name="health_healthy">سليم</string>
+    <string name="health_at_risk">في خطر</string>
+    <string name="health_blocked">متعطّل</string>
+    <string name="dash_status_distribution">توزيع الحالات</string>
+    <string name="status_active">نشط</string>
+    <string name="status_completed">مكتمل</string>
+    <string name="status_on_hold">متوقف</string>
+    <string name="dash_donut_projects">مشروع</string>
+    <string name="dash_risk_summary">ملخص المخاطر</string>
+    <string name="risk_overdue">متأخر</string>
+    <string name="risk_at_risk">في خطر</string>
+    <string name="risk_healthy">سليم</string>
+    <string name="risk_members">الأعضاء</string>
+    <string name="dash_heatmap_title">خريطة نشاط مساحة العمل</string>
+    <string name="dash_heatmap_sub">أحداث النظام في الأسابيع الأخيرة</string>
+    <string name="dash_total_events">إجمالي الأحداث</string>
+    <string name="dash_active_days">أيام نشطة</string>
+    <string name="dash_peak_day">أعلى يوم</string>
+    <string name="dash_live_activity">النشاط المباشر</string>
+    <string name="dash_recent_events">%1$d حدث جديد</string>
+    <string name="dash_no_activity">مفيش نشاط لسه.</string>
+    <string name="dash_projects_by_team">المشاريع حسب الفريق</string>
+    <string name="dash_pbt_sub">التوزيع على قادة الفرق</string>
+    <string name="dash_weekly_trend">منحنى التقدم الأسبوعي</string>
+    <string name="dash_wt_sub">متوسط تقدم مساحة العمل في 7 أسابيع</string>
+    <string name="dash_start">البداية</string>
+    <string name="dash_now">دلوقتي</string>
+    <string name="dash_ai_insights">رؤى الذكاء الاصطناعي</string>
+    <string name="dash_ai_sub">متولدة من بيانات مساحة العمل الحقيقية</string>
+    <string name="dash_no_insights">مفيش رؤى متاحة لسه.</string>
+    <string name="ins_deadline_title">تنبيه مواعيد</string>
+    <string name="ins_deadline_body">%1$d مشروع متأخر، محتاج تدخّل فوري.</string>
+    <string name="ins_completion_title">نسبة الإنجاز</string>
+    <string name="ins_completion_body">%1$d%% من المشاريع خلصت، الشغل ماشي صح.</string>
+    <string name="ins_blocked_title">مشاريع متعطلة</string>
+    <string name="ins_blocked_body">%1$d مشروع متوقف، راجع المعوقات مع قادة الفرق.</string>
+    <string name="ins_activity_title">نشاط عالي</string>
+    <string name="ins_activity_body">%1$d من %2$d عضو متصلين دلوقتي — وقت تعاون ذهبي.</string>
+    <string name="ins_progress_title">تقدم قوي</string>
+    <string name="ins_progress_body">متوسط تقدم مساحة العمل %1$d%% في كل المشاريع. تنفيذ ممتاز.</string>
+    <string name="ins_low_progress_title">تقدم ضعيف</string>
+    <string name="ins_low_progress_body">متوسط التقدم %1$d%% بس، راجع سرعة تنفيذ المشاريع.</string>
+    <string name="ins_ai_title">مراجعات AI قوية</string>
+    <string name="ins_ai_body">نسبة نجاح متوقعة %1$d%% في مراجعات الجودة. المعايير متحققة.</string>
+    <string name="ins_engagement_title">تفاعل عالي</string>
+    <string name="ins_engagement_body">%1$d حدث جديد في مساحة العمل. الفريق متفاعل جداً.</string>
+    <string name="dash_top_performers">الأعلى أداءً</string>
+    <string name="dash_perf_meta">%1$s · %2$d مهمة · %3$d مشروع</string>
+    <string name="dash_workspace_stats">إحصائيات مساحة العمل</string>
+    <string name="stats_total_members">إجمالي الأعضاء</string>
+    <string name="stats_online_now">متصلين دلوقتي</string>
+    <string name="stats_on_hold">متوقف</string>
+
+    <!-- Projects page -->
+    <string name="pj_tab_overview">نظرة عامة</string>
+    <string name="pj_recent">أحدث المشاريع</string>
+    <string name="pj_teams_count">%1$d فريق في مساحة العمل</string>
+    <string name="pj_create_title">إنشاء مشروع</string>
+    <string name="pj_edit_title">تعديل المشروع</string>
+    <string name="pj_create_sub">مبادرة جديدة</string>
+    <string name="pj_name_label">اسم المشروع</string>
+    <string name="pj_name_placeholder">مثلاً: حملة تسويق Q4</string>
+    <string name="pj_status_label">الحالة</string>
+    <string name="pj_desc_label">الوصف</string>
+    <string name="pj_desc_placeholder">المشروع ده بيدور حول إيه؟</string>
+    <string name="pj_progress_label">التقدم</string>
+    <string name="pj_due_label">الموعد النهائي</string>
+    <string name="pj_due_placeholder">اختار تاريخ التسليم</string>
+    <string name="pj_sub_managers">المديرين الفرعيين</string>
+    <string name="pj_sub_managers_sub">اختار المديرين الفرعيين</string>
+    <string name="pj_no_sub_managers">مفيش مديرين فرعيين متاحين.</string>
+    <string name="pj_staff">فريق المشروع (Staff)</string>
+    <string name="pj_staff_sub">اختار أعضاء الفريق</string>
+    <string name="pj_no_staff">مفيش حسابات staff متاحة لسه.</string>
+    <string name="pj_selected_count">%1$d مختار</string>
+    <string name="pj_create_button">إنشاء المشروع</string>
+    <string name="pj_delete_title">حذف المشروع؟</string>
+    <string name="pj_delete_message">"%1$s" هيتحذف نهائياً.</string>
+    <string name="pj_no_description">مفيش وصف</string>
+
+    <!-- Teams -->
+    <string name="tm_create_title">إنشاء فريق</string>
+    <string name="tm_edit_title">تعديل الفريق</string>
+    <string name="tm_name_label">اسم الفريق</string>
+    <string name="tm_name_placeholder">اكتب اسم الفريق</string>
+    <string name="tm_desc_placeholder">الفريق ده شغله إيه؟</string>
+    <string name="tm_managers">المديرين</string>
+    <string name="tm_managers_sub">اختار المديرين</string>
+    <string name="tm_no_users">مفيش مستخدمين متاحين.</string>
+    <string name="tm_members_title">أعضاء الفريق</string>
+    <string name="tm_no_members">مفيش أعضاء في الفريق ده.</string>
+    <string name="tm_unknown_user">مستخدم مجهول</string>
+    <string name="tm_edit_members_title">تعديل الأعضاء</string>
+    <string name="tm_delete_title">حذف الفريق؟</string>
+    <string name="tm_delete_message">"%1$s" هيتحذف نهائياً.</string>
+    <string name="tm_no_teams">مفيش فرق.</string>
+    <string name="tm_no_description">مفيش وصف.</string>
+    <string name="tm_members_count">%1$d عضو</string>
+    <string name="tm_view_members">عرض الأعضاء</string>
+    <string name="tm_page_sub">شوف وادِر فرق مساحة العمل.</string>
+    <string name="tm_view_details">شوف تفاصيل الفريق</string>
+    <string name="tm_back_to_teams">رجوع للفرق</string>
+    <string name="tm_details_no_description">مفيش وصف للفريق ده.</string>
+    <string name="tm_no_email">مفيش إيميل</string>
+
+    <!-- Staff projects -->
+    <string name="sp_active_pill">%1$d نشط</string>
+    <string name="sp_done_pill">%1$d مكتمل</string>
+    <string name="sp_filter_all">الكل</string>
+    <string name="sp_no_filtered">مفيش مشاريع مطابقة</string>
+    <string name="sp_admin_assign">الأدمن هيعينك على مشاريع قريب.</string>
+    <string name="sp_try_filter">جرّب فلتر تاني.</string>
+
+    <!-- Team page -->
+    <string name="tp_leaderboard_title">لوحة الأداء</string>
+    <string name="tp_leaderboard_sub">نتائج حية من تحليلات مساحة العمل</string>
+    <string name="tp_top_performer">الأفضل أداءً</string>
+    <string name="tp_top_reason">النتيجة %1$d/100 · %2$d مهمة خلصت</string>
+    <string name="tp_most_helpful">الأكثر إنجازاً</string>
+    <string name="tp_helpful_reason">%1$d مهمة مكتملة · %2$d مشروع</string>
+    <string name="tp_best_ai">أفضل جودة AI</string>
+    <string name="tp_ai_reason">نسبة نجاح AI: %1$d%%</string>
+    <string name="tp_role_chart_title">متوسط المهام حسب الدور</string>
+    <string name="tp_role_chart_sub">متوسط المهام المكتملة لكل مجموعة</string>
+    <string name="tp_tasks_pill">%1$d مهمة</string>
+    <string name="tp_ai_pill">AI %1$d%%</string>
+    <string name="tp_score_label">النتيجة</string>
+    <string name="tp_stat_done">مهام مكتملة</string>
+    <string name="tp_stat_in_progress">قيد التنفيذ</string>
+    <string name="tp_stat_review">قيد المراجعة</string>
+    <string name="tp_stat_total">إجمالي المهام</string>
+    <string name="tp_ai_quality">جودة AI</string>
+    <string name="tp_no_data">مفيش بيانات</string>
+
+    <!-- Tasks page -->
+    <string name="tk_completion_title">إنجاز المشروع</string>
+    <string name="tk_completion_sub">الحالة العامة عبر 17 مهمة نشطة</string>
+    <string name="tk_stat_completed">%1$d مكتملة</string>
+    <string name="tk_stat_in_progress">%1$d قيد التنفيذ</string>
+    <string name="tk_stat_remaining">%1$d متبقية</string>
+    <string name="tk_showing">معروض %1$d من 37 مهمة</string>
+    <string name="tk_status_completed">مكتملة</string>
+    <string name="tk_status_not_completed">لسه ما خلصتش</string>
+    <string name="tk_unassigned">غير مُعيّنة</string>
+    <string name="tk_analyze_ai">حلّل بالـ AI</string>
+    <string name="tk_analysis_title">تحليل الذكاء الاصطناعي</string>
+    <string name="tk_analyzing">بنشغّل تحليل الـ AI…</string>
+    <string name="tk_compliance_score">نسبة الالتزام</string>
+    <string name="tk_passed">معايير ناجحة</string>
+    <string name="tk_failed">معايير فاشلة</string>
+    <string name="tk_suggestions">اقتراحات</string>
+
+    <!-- Create task -->
+    <string name="ct_title">إنشاء مهمة جديدة</string>
+    <string name="ct_subtitle">ضيف مهمة جديدة لمساحة العمل</string>
+    <string name="ct_name_label">اسم المهمة</string>
+    <string name="ct_name_placeholder">اكتب اسم المهمة</string>
+    <string name="ct_priority_label">الأولوية</string>
+    <string name="ct_priority_low">منخفضة</string>
+    <string name="ct_priority_medium">متوسطة</string>
+    <string name="ct_priority_high">عالية</string>
+    <string name="ct_team_label">الفريق المسؤول</string>
+    <string name="ct_new_team">+ فريق جديد</string>
+    <string name="ct_assignees_label">المكلفين والرؤية</string>
+    <string name="ct_loading_members">بنحمّل أعضاء الفريق…</string>
+    <string name="ct_search_members">دوّر على الأعضاء…</string>
+    <string name="ct_select_all">اختار كل أعضاء الفريق</string>
+    <string name="ct_visibility_label">الرؤية:</string>
+    <string name="ct_visibility_team">الفريق</string>
+    <string name="ct_visibility_private">خاص</string>
+    <string name="ct_report_type_label">نوع التقرير (اختياري)</string>
+    <string name="ct_report_type_placeholder">مثلاً: course_spec, program_spec…</string>
+    <string name="ct_details_label">تفاصيل المهمة</string>
+    <string name="ct_details_placeholder">اكتب تفاصيل ووصف المهمة</string>
+    <string name="ct_submit">إنشاء المهمة</string>
+    <string name="ct_select_team_error">اختار فريق الأول.</string>
+    <string name="ct_select_assignee_error">اختار مكلّف واحد على الأقل.</string>
+
+    <!-- Workspace board -->
+    <string name="ws_col_todo">للعمل</string>
+    <string name="ws_col_in_progress">قيد التنفيذ</string>
+    <string name="ws_col_review">مراجعة</string>
+    <string name="ws_col_done">تم</string>
+    <string name="ws_add_task">ضيف مهمة</string>
+    <string name="ws_new_task_placeholder">عنوان المهمة…</string>
+    <string name="ws_panel_team">الفريق</string>
+    <string name="ws_panel_chat">الشات</string>
+    <string name="ws_panel_files">الملفات</string>
+    <string name="ws_panel_ai">AI</string>
+    <string name="ws_no_messages">مفيش رسايل لسه، ابدأ الكلام!</string>
+    <string name="ws_message_placeholder">اكتب رسالة… استخدم @ للمنشن</string>
+    <string name="ws_replying_to">بترد على %1$s</string>
+    <string name="ws_upload_file">ارفع ملف</string>
+    <string name="ws_no_files">مفيش ملفات مرفوعة لسه.</string>
+    <string name="ws_add_member">إضافة</string>
+    <string name="ws_no_responsibility">مفيش مسؤولية محددة</string>
+    <string name="ws_responsibility_placeholder">المسؤولية…</string>
+    <string name="ws_completed_by">خلصها: %1$s</string>
+    <string name="ws_delete_task_title">حذف المهمة؟</string>
+    <string name="ws_delete_task_message">المهمة دي هتتحذف نهائياً.</string>
+    <string name="ws_tab_info">معلومات</string>
+    <string name="ws_tab_discussion">النقاش</string>
+    <string name="ws_meta_assignee">المكلّف</string>
+    <string name="ws_meta_due">الموعد</string>
+    <string name="ws_meta_visibility">الرؤية</string>
+    <string name="ws_meta_completed_by">خلصها</string>
+    <string name="ws_meta_submitted_by">سلّمها</string>
+    <string name="ws_ai_hint">تسليمات ومراجعات الـ AI جاية في مرحلة الـ AI Review.</string>
+
+    <!-- Channels -->
+    <string name="ch_online_count">%1$d متصل</string>
+    <string name="ch_tab_feed">المنشورات</string>
+    <string name="ch_tab_members">الأعضاء</string>
+    <string name="ch_tab_activity">النشاط</string>
+    <string name="ch_type_announcement">📢 إعلان</string>
+    <string name="ch_type_task">📋 مهمة</string>
+    <string name="ch_type_note">📝 ملاحظة</string>
+    <string name="ch_post_title_placeholder">عنوان المنشور…</string>
+    <string name="ch_post_content_placeholder">اكتب حاجة… استخدم @ للمنشن</string>
+    <string name="ch_publish">انشر</string>
+    <string name="ch_reply">رد</string>
+    <string name="ch_reply_placeholder">اكتب رد…</string>
+
+    <!-- AI review -->
+    <string name="ai_submit_title">فحص الجودة بالـ AI</string>
+    <string name="ai_report_type">نوع التقرير</string>
+    <string name="ai_pick_type">اختار نوع التقرير…</string>
+    <string name="ai_files_label">مستندات (PDF/Word)</string>
+    <string name="ai_add_files">ضيف ملفات</string>
+    <string name="ai_add_images">ضيف صور</string>
+    <string name="ai_images_count">%1$d صورة مرفقة</string>
+    <string name="ai_notes_label">ملاحظات التسليم</string>
+    <string name="ai_notes_placeholder">أي حاجة المراجع لازم يعرفها…</string>
+    <string name="ai_run_check">شغّل فحص الجودة</string>
+    <string name="ai_evaluating">بنقيّم التسليم بتاعك…</string>
+    <string name="ai_passed_title">فحص الجودة نجح</string>
+    <string name="ai_failed_title">فحص الجودة فشل</string>
+    <string name="ai_auto_submit">هيتبعت لمراجعة الجودة خلال %1$d…</string>
+    <string name="ai_failed_sub">صلّح المشاكل اللي تحت وجرّب تاني.</string>
+    <string name="ai_type_compliance">مطابقة نوع التقرير</string>
+    <string name="ai_missing_elements">ناقص: %1$s</string>
+    <string name="ai_submit_button">سلّم لمراجعة الـ AI</string>
+    <string name="ai_history_title">آخر التقييمات</string>
+    <string name="ai_no_history">مفيش تقييمات AI لسه.</string>
+    <string name="ai_template_title">قالب التقرير</string>
+    <string name="ai_template_sub">نزّل القالب الرسمي لنوع التقرير ده.</string>
+    <string name="ai_template_ar">القالب (عربي)</string>
+    <string name="ai_template_en">القالب (إنجليزي)</string>
+    <string name="ai_verdict_title">قرار مراقبة الجودة</string>
+    <string name="ai_verdict_pending">في انتظار مراجعة الجودة</string>
+    <string name="ai_verdict_accepted">مقبول</string>
+    <string name="ai_verdict_none">لسه ما اتسلمش.</string>
+
+    <!-- Chatbot -->
+    <string name="bot_title">Orbit AI</string>
+    <string name="bot_subtitle">مساعدك في مساحة العمل</string>
+    <string name="bot_greeting">أهلاً! أنا **Orbit AI** — اسألني أي حاجة عن مساحة العمل أو المهام أو تقارير الجودة.</string>
+    <string name="bot_placeholder">اسأل Orbit AI…</string>
+
+    <!-- Calendar -->
+    <string name="ev_new">حدث</string>
+    <string name="ev_create_title">إنشاء حدث</string>
+    <string name="ev_edit_title">تعديل الحدث</string>
+    <string name="ev_title_label">العنوان</string>
+    <string name="ev_title_placeholder">عنوان الحدث…</string>
+    <string name="ev_type_label">نوع الحدث</string>
+    <string name="ev_type_meeting">اجتماع</string>
+    <string name="ev_type_project_deadline">موعد مشروع</string>
+    <string name="ev_type_review_session">جلسة مراجعة</string>
+    <string name="ev_type_training_session">جلسة تدريب</string>
+    <string name="ev_type_quality_audit">تدقيق جودة</string>
+    <string name="ev_type_team_event">فعالية فريق</string>
+    <string name="ev_type_reminder">تذكير</string>
+    <string name="ev_type_personal_event">شخصي</string>
+    <string name="ev_type_task_deadline">موعد مهمة</string>
+    <string name="ev_type_milestone">معلم رئيسي</string>
+    <string name="ev_start_date">تاريخ البداية</string>
+    <string name="ev_end_date">تاريخ النهاية</string>
+    <string name="ev_start_time">وقت البداية</string>
+    <string name="ev_end_time">وقت النهاية</string>
+    <string name="ev_desc_placeholder">الحدث ده بيدور حول إيه؟</string>
+    <string name="ev_location_label">المكان</string>
+    <string name="ev_location_placeholder">قاعة، مبنى، مدينة…</string>
+    <string name="ev_link_label">رابط الاجتماع</string>
+    <string name="ev_visibility_label">الرؤية</string>
+    <string name="ev_vis_project">أعضاء المشروع</string>
+    <string name="ev_vis_workspace">مساحة العمل</string>
+    <string name="ev_reminder_label">التذكير</string>
+    <string name="ev_rem_15">قبلها بـ15د</string>
+    <string name="ev_rem_60">قبلها بساعة</string>
+    <string name="ev_rem_720">قبلها بـ12س</string>
+    <string name="ev_rem_1440">قبلها بيوم</string>
+    <string name="ev_recurrence_label">التكرار</string>
+    <string name="ev_rec_none">بدون</string>
+    <string name="ev_rec_daily">يومي</string>
+    <string name="ev_rec_weekly">أسبوعي</string>
+    <string name="ev_rec_monthly">شهري</string>
+    <string name="ev_rec_yearly">سنوي</string>
+    <string name="ev_color_label">اللون</string>
+    <string name="ev_attendees_label">الحضور</string>
+    <string name="ev_no_events">مفيش أحداث في اليوم ده.</string>
+    <string name="ev_rsvp_label">تأكيد الحضور</string>
+    <string name="ev_rsvp_attending">هحضر</string>
+    <string name="ev_rsvp_tentative">يمكن</string>
+    <string name="ev_rsvp_declined">اعتذار</string>
+
+    <!-- QC suite -->
+    <string name="qc_tab_intelligence">الذكاء</string>
+    <string name="qc_tab_standards">المعايير</string>
+    <string name="qc_tab_evaluations">التقييمات</string>
+    <string name="qc_kpi_evaluations">التقييمات</string>
+    <string name="qc_kpi_avg_score">متوسط النتيجة</string>
+    <string name="qc_kpi_standards">معايير نشطة</string>
+    <string name="qc_kpi_pass_rate">نسبة النجاح</string>
+    <string name="qc_bottlenecks_title">اختناقات المراجعة</string>
+    <string name="qc_bottlenecks_sub">أبطأ مراحل المراجعة بمتوسط الساعات</string>
+    <string name="qc_hours">متوسط %1$d ساعة</string>
+    <string name="qc_trend_title">منحنى النتائج</string>
+    <string name="qc_trend_sub">متوسط نتيجة الالتزام عبر الوقت</string>
+    <string name="qc_heatmap_title">نشاط التقييمات</string>
+    <string name="qc_heatmap_sub">آخر 16 أسبوع من التقييمات</string>
+    <string name="qc_new_standard">معيار جديد</string>
+    <string name="qc_edit_standard">تعديل المعيار</string>
+    <string name="qc_no_standards">مفيش معايير متعرفة لسه.</string>
+    <string name="qc_standard_placeholder">عنوان المعيار…</string>
+    <string name="qc_rules_title">القواعد</string>
+    <string name="qc_rules_count">%1$d قاعدة</string>
+    <string name="qc_rule_label">نص القاعدة…</string>
+    <string name="qc_rule_instructions">تعليمات (اختياري)…</string>
+    <string name="qc_rule_weight">الوزن %1$d%%</string>
+    <string name="qc_add_rule">ضيف قاعدة</string>
+    <string name="qc_archive">أرشفة</string>
+    <string name="qc_project_scores">نتائج المشاريع</string>
+    <string name="qc_project_scores_sub">متوسط نتيجة الـ AI لكل مشروع</string>
+    <string name="qc_export_title">تصدير التقارير</string>
+    <string name="qc_export_csv">تصدير CSV</string>
+    <string name="qc_export_pdf">تصدير PDF</string>
+    <string name="qi_subtitle">نظرة على الجودة في آخر 60 يوم.</string>
+    <string name="qi_trend_sub">آخر 60 يوم</string>
+    <string name="qi_download_title">تنزيل التقارير</string>
+
+    <!-- Reports & portals -->
+    <string name="rp_workspace_health">صحة مساحة العمل</string>
+    <string name="rp_overdue_projects">مشاريع متأخرة</string>
+    <string name="rp_total_tasks">إجمالي المهام</string>
+    <string name="rp_done_tasks">مهام مكتملة</string>
+    <string name="rp_overdue_tasks">مهام متأخرة</string>
+    <string name="rp_due_today">آخرها النهارده</string>
+    <string name="rp_quality_reviews">مراجعات الجودة</string>
+    <string name="rp_quality_pass">نسبة النجاح</string>
+    <string name="rp_projects_sub">تقدم لحظي عبر مساحة العمل</string>
+    <string name="rp_tasks_meta">%1$d من %2$d مهمة خلصت</string>
+    <string name="sa_projects_sub">مشاريعك مع نتائج الـ AI</string>
+    <string name="sa_team_title">توزيع الفريق</string>
+    <string name="pf_stats_title">الأداء</string>
+
+    <!-- IT suite -->
+    <string name="it_create_user">إنشاء مستخدم</string>
+    <string name="it_edit_user">تعديل المستخدم</string>
+    <string name="it_role_label">الدور</string>
+    <string name="it_status_label">حالة الحساب</string>
+    <string name="it_status_active">نشط</string>
+    <string name="it_status_suspended">موقوف</string>
+    <string name="it_reset_password">إعادة تعيين كلمة السر</string>
+    <string name="it_new_password">كلمة السر الجديدة</string>
+    <string name="it_force_logout">إخراج إجباري</string>
+    <string name="it_delete_user_title">حذف المستخدم؟</string>
+    <string name="it_delete_user_message">"%1$s" هيتحذف نهائياً.</string>
+    <string name="it_role_matrix">مصفوفة الأدوار</string>
+    <string name="it_role_matrix_sub">صلاحيات كل دور في المنصة</string>
+    <string name="role_desc_founder">تحكم كامل في المنصة والكيانات وحسابات الـ IT</string>
+    <string name="role_desc_it">إدارة المستخدمين والجلسات وإعدادات النظام</string>
+    <string name="role_desc_admin">مساحة العمل والمشاريع والجودة وإدارة المستخدمين</string>
+    <string name="role_desc_manager">المشاريع والفريق والتقارير</string>
+    <string name="role_desc_subadmin">بيدير أعضاء محددين ومهامهم</string>
+    <string name="role_desc_staff">مهامه والقناة العامة والتقويم</string>
+    <string name="role_desc_qc">رؤى الجودة والمعايير والتقييمات</string>
+    <string name="it_section_users">المستخدمين</string>
+    <string name="it_section_roles">الأدوار</string>
+    <string name="it_section_security">الأمان</string>
+    <string name="it_section_audit">السجلات</string>
+    <string name="it_section_health">الصحة</string>
+    <string name="it_active_sessions">جلسات نشطة</string>
+    <string name="it_error_rate">نسبة الأخطاء</string>
+    <string name="it_storage">التخزين</string>
+    <string name="it_security_sub">إيقاف الحسابات والخروج الشامل</string>
+    <string name="it_security_hint">الإخراج الإجباري بيوقف الحساب؛ رجّعه من قسم المستخدمين. الخروج الشامل بيفعّل وضع الصيانة.</string>
+    <string name="it_logout_all">تسجيل خروج الجميع</string>
+    <string name="it_logout_all_message">ده هيفعّل وضع الصيانة ويخرج كل المستخدمين.</string>
+    <string name="it_settings_title">إعدادات النظام</string>
+    <string name="it_maintenance_mode">وضع الصيانة</string>
+    <string name="it_maintenance_sub">بيمنع دخول غير فريق الـ IT طول ما هو مفعّل</string>
+    <string name="it_max_upload">أقصى حجم رفع (MB)</string>
+    <string name="it_sessions_sub">%1$d جلسة مسجلة</string>
+    <string name="it_duration">%1$d د</string>
+    <string name="it_my_sessions">جلساتي</string>
+    <string name="it_credentials_sub">سجل نصي بالحسابات الصادرة</string>
+    <string name="it_download_file">تنزيل الملف</string>
+
+    <!-- Founder suite -->
+    <string name="fd_platform_health">صحة المنصة</string>
+    <string name="fd_entities">الكيانات</string>
+    <string name="fd_active_now">نشطين دلوقتي</string>
+    <string name="fd_pending_evals">تقييمات AI معلقة</string>
+    <string name="fd_total_reports">إجمالي التقارير</string>
+    <string name="fd_financials">الماليات</string>
+    <string name="fd_financials_sub">الإيراد الشهري المتكرر والباقات</string>
+    <string name="fd_mrr">الإيراد الشهري المتكرر</string>
+    <string name="fd_ai_trends">اتجاهات الـ AI (7 أيام)</string>
+    <string name="fd_ai_trends_sub">التقييمات المقبولة في اليوم</string>
+    <string name="fd_accepted">مقبول</string>
+    <string name="fd_rejected">مرفوض</string>
+    <string name="fd_alerts">تنبيهات النظام</string>
+    <string name="fd_no_alerts">مفيش تنبيهات — كل الأنظمة تمام.</string>
+    <string name="fd_frameworks">أطر الجودة</string>
+    <string name="fd_new_framework">إطار جديد</string>
+    <string name="fd_edit_framework">تعديل الإطار</string>
+    <string name="fd_framework_placeholder">اسم الإطار…</string>
+    <string name="fd_prompt_label">قالب برومبت الـ AI</string>
+    <string name="fd_prompt_placeholder">التعليمات اللي مقيّم الـ AI هيمشي عليها…</string>
+    <string name="fd_threshold">العتبة %1$d%%</string>
+    <string name="fd_new_entity">كيان جديد</string>
+    <string name="fd_entity_placeholder">اسم الكيان…</string>
+    <string name="fd_entity_meta">%1$d مستخدم · %2$d موظف IT</string>
+    <string name="fd_assign_it">تعيين IT — %1$s</string>
+    <string name="fd_new_it_account">حساب IT جديد</string>
+    <string name="fd_toggle_status">تبديل الحالة</string>
+
+    <!-- Help center -->
+    <string name="help_subtitle">أدلة ودعم لمساحة عمل Orbit.</string>
+    <string name="help_start_title">ابدأ هنا</string>
+    <string name="help_start_body">سجّل دخولك بالحساب اللي الأدمن أصدره ليك، وبعدها استخدم التنقل السفلي للوصول للرئيسية والمشاريع والإعدادات.</string>
+    <string name="help_projects_title">المشاريع واللوحات</string>
+    <string name="help_projects_body">افتح أي مشروع عشان تستخدم لوحة الكانبان والشات والملفات والأعضاء. حرّك المهام بين الأعمدة الأربعة.</string>
+    <string name="help_ai_title">مراجعة الجودة بالـ AI</string>
+    <string name="help_ai_body">سلّم تقارير PDF أو Word لفحص التزام بالـ AI. نتيجة 70%% أو أكتر بتتبعت تلقائياً لمراجعة الجودة.</string>
+    <string name="help_channels_title">القنوات</string>
+    <string name="help_channels_body">استخدم القناة العامة للإعلانات والمهام والملاحظات. اعمل منشن بـ @ وتفاعل مع المنشورات.</string>
+    <string name="help_support_title">الدعم</string>
+    <string name="help_support_body">محتاج مساعدة؟ كلم فريق الـ IT أو الأدمن من صفحة الفريق.</string>
+
+    <!-- Settings -->
+    <string name="st_tab_profile">البروفايل</string>
+    <string name="st_tab_security">الأمان</string>
+    <string name="st_tab_appearance">المظهر</string>
+    <string name="st_upload_avatar">ارفع صورة</string>
+    <string name="st_remove_avatar">شيل الصورة</string>
+    <string name="st_profile_details">تفاصيل البروفايل</string>
+    <string name="st_bio">نبذة</string>
+    <string name="st_job_title">المسمى الوظيفي</string>
+    <string name="st_department">القسم</string>
+    <string name="st_country">الدولة</string>
+    <string name="st_timezone">المنطقة الزمنية</string>
+    <string name="st_saved">اتحفظ ✓</string>
+    <string name="st_change_password">تغيير كلمة السر</string>
+    <string name="st_notif_sub">محفوظة على الجهاز ده</string>
+    <string name="st_notif_push">إشعارات فورية</string>
+    <string name="st_notif_email">إشعارات الإيميل</string>
+    <string name="st_notif_mentions">تنبيهات المنشن</string>
+    <string name="st_appearance_sub">الافتراضي غامق لو مفيش اختيار محفوظ</string>
+</resources>
