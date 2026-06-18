@@ -73,7 +73,7 @@
     <string name="brand_feature_4">Real-time analytics and insights</string>
     <string name="brand_status_ok">All systems operational</string>
 
-    <!-- Onboarding (mirrors the web landing page) -->
+    <!-- Onboarding -->
     <string name="onb_skip">Skip</string>
     <string name="onb_next">Next</string>
     <string name="onb_launch">Launch Orbit</string>

@@ -2,7 +2,7 @@
 <!-- Launcher foreground -->
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- Centered logo (58x41 preserves the 1.41 aspect ratio inside the 72dp safe zone) -->
+    <!-- Centered logo -->
     <item
         android:width="58dp"
         android:height="41dp"

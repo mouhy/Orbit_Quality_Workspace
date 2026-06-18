@@ -483,7 +483,7 @@ fun TeamFormSheet(
     var subManagers by remember { mutableStateOf(emptySet<String>()) }
     var staff by remember { mutableStateOf(emptySet<String>()) }
 
-    // Role hierarchy: admin picks sub-admins + staff; sub-admin only staff
+    // Role hierarchy
     val canPickHigher = currentRole == "admin"
 
     val managerUsers = users.filter { it.role == "admin" || it.role == "manager" }

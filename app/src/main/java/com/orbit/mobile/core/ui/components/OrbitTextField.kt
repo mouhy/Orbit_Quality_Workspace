@@ -66,7 +66,7 @@ fun OrbitTextField(
         focused -> colors.focusRing
         else -> Color.Transparent
     }
-    // Animated border (color-only; never animates layout to keep focus switching crash-safe)
+    // Animated border
     val borderColor by animateColorAsState(targetBorder, tween(180), label = "border")
     // Animated ring
     val ringColor by animateColorAsState(targetRing, tween(180), label = "ring")
@@ -86,7 +86,7 @@ fun OrbitTextField(
                 modifier = Modifier.padding(bottom = 6.dp)
             )
         }
-        // Focus ring (constant padding — only the color animates)
+        // Focus ring
         Box(
             modifier = Modifier
                 .fillMaxWidth()

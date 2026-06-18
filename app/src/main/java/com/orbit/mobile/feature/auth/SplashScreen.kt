@@ -117,7 +117,10 @@ private fun StartingUpContent() {
 // Down screen
 @Composable
 private fun BackendDownContent(onRetry: () -> Unit) {
+    val colors = OrbitTheme.colors
     var countdown by remember { mutableIntStateOf(10) }
+    // Ring track
+    val trackColor = colors.textMuted.copy(alpha = 0.22f)
 
     // Auto retry
     LaunchedEffect(Unit) {
@@ -150,14 +153,17 @@ private fun BackendDownContent(onRetry: () -> Unit) {
         label = "ring"
     )
 
+    // Theme background
+    val bgBrush = if (colors.isDark) {
+        Brush.linearGradient(listOf(colors.appBackground, colors.surface, colors.appBackground))
+    } else {
+        Brush.linearGradient(listOf(Color(0xFFEEF2FF), Color(0xFFF0F4FF), Color(0xFFEDE9FE)))
+    }
+
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(
-                Brush.linearGradient(
-                    listOf(Color(0xFFEEF2FF), Color(0xFFF0F4FF), Color(0xFFEDE9FE))
-                )
-            )
+            .background(bgBrush)
             .padding(24.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
@@ -177,7 +183,7 @@ private fun BackendDownContent(onRetry: () -> Unit) {
                 modifier = Modifier
                     .offset { IntOffset(0, floatY.roundToInt()) }
                     .size(80.dp)
-                    .background(Color.White, CircleShape),
+                    .background(colors.surface, CircleShape),
                 contentAlignment = Alignment.Center
             ) {
                 Icon(
@@ -193,13 +199,13 @@ private fun BackendDownContent(onRetry: () -> Unit) {
         Text(
             text = stringResource(R.string.boot_connecting_title),
             style = MaterialTheme.typography.headlineLarge,
-            color = Color(0xFF1E1B4B)
+            color = colors.textPrimary
         )
         Spacer(Modifier.height(8.dp))
         Text(
             text = stringResource(R.string.boot_connecting_desc),
             style = MaterialTheme.typography.bodyMedium,
-            color = Color(0xFF6B7280),
+            color = colors.textSecondary,
             textAlign = TextAlign.Center
         )
         Spacer(Modifier.height(24.dp))
@@ -231,7 +237,7 @@ private fun BackendDownContent(onRetry: () -> Unit) {
             Canvas(modifier = Modifier.size(56.dp)) {
                 val stroke = Stroke(width = 3.5.dp.toPx(), cap = StrokeCap.Round)
                 drawCircle(
-                    color = Color(0xFFE5E7EB),
+                    color = trackColor,
                     radius = size.minDimension / 2 - stroke.width,
                     style = stroke
                 )

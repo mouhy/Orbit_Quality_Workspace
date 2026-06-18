@@ -30,7 +30,7 @@ data class SystemAlertDto(
 // Full founder command-center payload
 @Serializable
 data class FounderMetricsDto(
-    // Health string (e.g. "100% Operational")
+    // Health string
     @SerialName("platform_health") val platformHealth: String = "",
     @SerialName("total_entities") val totalEntities: Int = 0,
     @SerialName("total_teams") val totalTeams: Int = 0,

@@ -1,5 +1,6 @@
 package com.orbit.mobile.core.datastore
 
+import com.orbit.mobile.core.security.CryptoManager
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import javax.inject.Inject
@@ -34,8 +35,17 @@ class SessionManager @Inject constructor(
     // Restore stored
     suspend fun restore() {
         val prefs = store.snapshot()
+        val storedToken = prefs[OrbitDataStore.Keys.TOKEN]
+        // Decrypt token
+        val token = storedToken?.let { CryptoManager.decrypt(it) }
+        // Wipe legacy/corrupt
+        if (storedToken != null && token == null) {
+            store.clearSession()
+            _session.value = UserSession()
+            return
+        }
         _session.value = UserSession(
-            token = prefs[OrbitDataStore.Keys.TOKEN],
+            token = token,
             userId = prefs[OrbitDataStore.Keys.USER_ID],
             role = prefs[OrbitDataStore.Keys.ROLE],
             fullName = prefs[OrbitDataStore.Keys.FULL_NAME],

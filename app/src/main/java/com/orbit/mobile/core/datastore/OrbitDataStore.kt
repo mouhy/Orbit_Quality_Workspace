@@ -6,6 +6,7 @@ import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
+import com.orbit.mobile.core.security.CryptoManager
 import com.orbit.mobile.core.theme.ThemeMode
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.Flow
@@ -33,7 +34,6 @@ class OrbitDataStore @Inject constructor(
         val EMAIL = stringPreferencesKey("email")
         val AVATAR = stringPreferencesKey("userAvatar")
         val THEME = stringPreferencesKey("theme")
-        val LANG = stringPreferencesKey("lang")
         val BASE_URL = stringPreferencesKey("baseUrl")
         val ONBOARDING_SEEN = booleanPreferencesKey("onboarding_seen")
     }
@@ -43,9 +43,6 @@ class OrbitDataStore @Inject constructor(
 
     // Theme flow
     val themeFlow: Flow<ThemeMode> = store.data.map { ThemeMode.from(it[Keys.THEME]) }
-
-    // Lang flow
-    val langFlow: Flow<String?> = store.data.map { it[Keys.LANG] }
 
     // One-shot read
     suspend fun snapshot(): Preferences = store.data.first()
@@ -68,7 +65,8 @@ class OrbitDataStore @Inject constructor(
         avatar: String?
     ) {
         store.edit {
-            it[Keys.TOKEN] = token
+            // Encrypt token
+            it[Keys.TOKEN] = CryptoManager.encrypt(token)
             it[Keys.USER_ID] = userId
             it[Keys.ROLE] = role
             it[Keys.FULL_NAME] = fullName
@@ -92,10 +90,6 @@ class OrbitDataStore @Inject constructor(
     // Setters
     suspend fun setTheme(mode: ThemeMode) {
         store.edit { it[Keys.THEME] = mode.storageValue }
-    }
-
-    suspend fun setLang(lang: String) {
-        store.edit { it[Keys.LANG] = lang }
     }
 
     suspend fun setBaseUrl(url: String?) {

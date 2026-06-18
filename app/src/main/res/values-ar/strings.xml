@@ -71,7 +71,7 @@
     <string name="brand_feature_4">تحليلات ورؤى لحظية</string>
     <string name="brand_status_ok">كل الأنظمة شغالة</string>
 
-    <!-- Onboarding (مطابقة لصفحة الهبوط) -->
+    <!-- Onboarding -->
     <string name="onb_skip">تخطّي</string>
     <string name="onb_next">التالي</string>
     <string name="onb_launch">أطلِق Orbit</string>

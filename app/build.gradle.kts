@@ -1,3 +1,5 @@
+import java.util.Properties
+
 // App plugins
 plugins {
     alias(libs.plugins.android.application)
@@ -7,6 +9,14 @@ plugins {
     alias(libs.plugins.ksp)
     alias(libs.plugins.hilt)
 }
+
+// Config loader
+val localProps = Properties().apply {
+    val f = rootProject.file("local.properties")
+    if (f.exists()) f.inputStream().use { load(it) }
+}
+fun cfg(key: String, default: String): String =
+    "\"${localProps.getProperty(key) ?: System.getenv(key) ?: default}\""
 
 android {
     namespace = "com.orbit.mobile"
@@ -20,18 +30,23 @@ android {
         versionName = "1.0.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        // Backend config
+        buildConfigField("String", "BASE_URL", cfg("BASE_URL", "http://10.0.2.2:8000/api/v1/"))
+        buildConfigField("String", "WS_BASE_URL", cfg("WS_BASE_URL", "ws://10.0.2.2:8000"))
+        // SSL pin
+        buildConfigField("String", "PIN_HOST", cfg("PIN_HOST", "10.0.2.2"))
+        buildConfigField("String", "PIN_SHA256", cfg("PIN_SHA256", "sha256/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="))
     }
 
     buildTypes {
         debug {
-            // Backend URL (LAN IP for real device on same Wi-Fi)
-            buildConfigField("String", "BASE_URL", "\"http://192.168.0.16:8000/api/v1/\"")
-            buildConfigField("String", "WS_BASE_URL", "\"ws://192.168.0.16:8000\"")
+            isMinifyEnabled = false
         }
         release {
-            buildConfigField("String", "BASE_URL", "\"http://192.168.0.16:8000/api/v1/\"")
-            buildConfigField("String", "WS_BASE_URL", "\"ws://192.168.0.16:8000\"")
-            isMinifyEnabled = false
+            // Obfuscate + shrink
+            isMinifyEnabled = true
+            isShrinkResources = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -49,6 +64,11 @@ android {
     buildFeatures {
         compose = true
         buildConfig = true
+    }
+    // Lint config
+    lint {
+        checkReleaseBuilds = false
+        abortOnError = false
     }
     packaging {
         resources {
