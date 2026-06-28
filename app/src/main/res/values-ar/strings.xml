@@ -667,7 +667,7 @@
     <string name="fd_assign_it">تعيين IT — %1$s</string>
     <string name="fd_new_it_account">حساب IT جديد</string>
     <string name="fd_toggle_status">تبديل الحالة</string>
-
+    <string name="fd_quality_system">نظام الجودة</string>
     <!-- Help center -->
     <string name="help_subtitle">أدلة ودعم لمساحة عمل Orbit.</string>
     <string name="help_start_title">ابدأ هنا</string>

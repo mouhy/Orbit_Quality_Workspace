@@ -271,29 +271,14 @@ fun WorkspaceScreen(
                 )
             }
         }
-        BoardSheet.AI -> ModalBottomSheet(
-            onDismissRequest = { sheet = BoardSheet.NONE },
-            containerColor = colors.popupBg,
-            shape = RoundedCornerShape(topStart = 14.dp, topEnd = 14.dp)
-        ) {
-            Column(
-                modifier = Modifier
-                    .padding(horizontal = 16.dp)
-                    .padding(bottom = 24.dp)
-            ) {
-                Text(
-                    text = stringResource(R.string.ws_panel_ai),
-                    style = MaterialTheme.typography.titleMedium,
-                    color = colors.textPrimary
-                )
-                Spacer(Modifier.height(8.dp))
-                Text(
-                    text = stringResource(R.string.ws_ai_hint),
-                    style = MaterialTheme.typography.bodySmall,
-                    color = colors.textMuted
-                )
-            }
-        }
+        BoardSheet.AI -> com.orbit.mobile.feature.aireview.TaskSubmitSheet(
+            taskTitle = state.board?.overview?.title ?: "",
+            taskDescription = state.board?.overview?.description ?: "",
+            taskId = null,
+            initialReportType = null,
+            onDismiss = { sheet = BoardSheet.NONE },
+            onAutoSubmitted = { sheet = BoardSheet.NONE }
+        )
         BoardSheet.NONE -> Unit
     }
 

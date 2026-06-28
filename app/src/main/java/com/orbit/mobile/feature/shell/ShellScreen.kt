@@ -59,6 +59,7 @@ fun ShellScreen(
     val menu = remember(role) { menuForRole(role) }
     val primaryItems = if (menu.size <= 5) menu else menu.take(4)
     val overflowItems = if (menu.size <= 5) emptyList() else menu.drop(4)
+    val tabRoutes = remember(menu) { menu.map { it.route.substringBefore("?") }.toSet() }
 
     val navController = rememberNavController()
     val backStack by navController.currentBackStackEntryAsState()
@@ -77,11 +78,10 @@ fun ShellScreen(
     // Guarded navigate
     fun go(route: String) {
         val target = Guards.resolve(role, route)
-        // Detail push
-        val isDetail = target.substringBefore("?").contains("/") ||
-            target.substringAfter("?", "").contains("=")
+        // Tab check
+        val isTab = target.substringBefore("?") in tabRoutes
         navController.navigate(target) {
-            if (!isDetail) {
+            if (isTab) {
                 popUpTo(navController.graph.findStartDestination().id) { saveState = true }
                 restoreState = true
             }

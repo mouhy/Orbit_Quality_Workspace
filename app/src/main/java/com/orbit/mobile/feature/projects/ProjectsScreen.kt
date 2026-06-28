@@ -146,7 +146,7 @@ fun ProjectsScreen(
             ProjectsTab.PROJECTS -> ProjectsTabContent(
                 state = state,
                 onSearch = viewModel::setSearch,
-                onOpen = { onNavigate("${InnerRoutes.TASKFLOW}?projectId=$it") },
+                onOpen = { onNavigate("${InnerRoutes.WORKSPACE}?projectId=$it") },
                 onCreate = { showCreateProject = true },
                 onEdit = { editProject = it },
                 onDelete = { deleteProject = it },

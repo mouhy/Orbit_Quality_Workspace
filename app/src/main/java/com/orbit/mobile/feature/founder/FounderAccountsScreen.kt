@@ -20,11 +20,17 @@ import androidx.compose.material.icons.outlined.Delete
 import androidx.compose.material.icons.outlined.Edit
 import androidx.compose.material.icons.outlined.Key
 import androidx.compose.material.icons.outlined.Search
+import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.ExposedDropdownMenuBox
+import androidx.compose.material3.ExposedDropdownMenuDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.MenuAnchorType
 import androidx.compose.material3.ModalBottomSheet
+import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.OutlinedTextFieldDefaults
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -60,6 +66,19 @@ import com.orbit.mobile.feature.dashboard.HashAvatar
 import com.orbit.mobile.feature.dashboard.LoadingHint
 import com.orbit.mobile.feature.dashboard.TinyPill
 import com.orbit.mobile.feature.projects.ConfirmDeleteDialog
+
+// Must match backend ALLOWED_QUALITY_SYSTEMS
+private val QUALITY_SYSTEMS = listOf(
+    "iso-9001", "iso-27001", "iso-45001", "iso-14001", "naqaae"
+)
+
+private val QUALITY_SYSTEM_LABELS = mapOf(
+    "iso-9001"  to "ISO 9001",
+    "iso-27001" to "ISO 27001",
+    "iso-45001" to "ISO 45001",
+    "iso-14001" to "ISO 14001",
+    "naqaae"    to "NAQAAE"
+)
 
 /** Founder's IT staff management: create, rename, reset password, toggle status, delete. */
 @Composable
@@ -270,6 +289,8 @@ private fun FounderAccountFormSheet(
     var name by remember { mutableStateOf(editing?.name ?: "") }
     var email by remember { mutableStateOf(editing?.email ?: "") }
     var password by remember { mutableStateOf("") }
+    var qualitySystem by remember { mutableStateOf(QUALITY_SYSTEMS.first()) }
+    var qsExpanded by remember { mutableStateOf(false) }
 
     ModalBottomSheet(
         onDismissRequest = onDismiss,
@@ -307,6 +328,51 @@ private fun FounderAccountFormSheet(
                     label = stringResource(R.string.login_password_label),
                     placeholder = stringResource(R.string.setup_password_placeholder)
                 )
+                // Quality system picker — matches backend ALLOWED_QUALITY_SYSTEMS
+                Text(
+                    text = stringResource(R.string.fd_quality_system),
+                    style = MaterialTheme.typography.labelMedium,
+                    color = colors.textSecondary,
+                    modifier = Modifier.padding(bottom = 2.dp)
+                )
+                ExposedDropdownMenuBox(
+                    expanded = qsExpanded,
+                    onExpandedChange = { qsExpanded = it }
+                ) {
+                    OutlinedTextField(
+                        value = QUALITY_SYSTEM_LABELS[qualitySystem] ?: qualitySystem,
+                        onValueChange = {},
+                        readOnly = true,
+                        trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = qsExpanded) },
+                        colors = OutlinedTextFieldDefaults.colors(
+                            focusedBorderColor = OrbitPrimary,
+                            unfocusedBorderColor = colors.borderStrong,
+                            focusedTextColor = colors.textPrimary,
+                            unfocusedTextColor = colors.textPrimary,
+                            focusedContainerColor = if (colors.isDark) colors.surface2 else colors.surface,
+                            unfocusedContainerColor = if (colors.isDark) colors.surface2 else colors.surface
+                        ),
+                        modifier = Modifier
+                            .menuAnchor(MenuAnchorType.PrimaryNotEditable)
+                            .fillMaxWidth(),
+                        textStyle = MaterialTheme.typography.bodyMedium,
+                        singleLine = true
+                    )
+                    ExposedDropdownMenu(
+                        expanded = qsExpanded,
+                        onDismissRequest = { qsExpanded = false }
+                    ) {
+                        QUALITY_SYSTEMS.forEach { qs ->
+                            DropdownMenuItem(
+                                text = { Text(QUALITY_SYSTEM_LABELS[qs] ?: qs) },
+                                onClick = {
+                                    qualitySystem = qs
+                                    qsExpanded = false
+                                }
+                            )
+                        }
+                    }
+                }
             }
             externalError?.let { AuthErrorBox(message = it.asString()) }
             OrbitButton(
@@ -318,7 +384,8 @@ private fun FounderAccountFormSheet(
                             FounderAccountCreateRequest(
                                 fullName = name.trim(),
                                 email = email.trim(),
-                                password = password
+                                password = password,
+                                qualitySystem = qualitySystem
                             )
                         )
                     } else {

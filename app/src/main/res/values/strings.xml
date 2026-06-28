@@ -1,4 +1,4 @@
-﻿<resources>
+<resources>
     <string name="app_name" translatable="false">Orbit</string>
 
     <!-- Common actions -->
@@ -679,6 +679,7 @@
     <string name="fd_entity_meta">%1$d users · %2$d IT staff</string>
     <string name="fd_assign_it">Assign IT — %1$s</string>
     <string name="fd_new_it_account">New IT Account</string>
+    <string name="fd_quality_system">Quality System</string>
     <string name="fd_toggle_status">Toggle status</string>
 
     <!-- Help center -->

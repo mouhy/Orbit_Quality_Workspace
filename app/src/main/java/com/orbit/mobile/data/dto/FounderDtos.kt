@@ -59,15 +59,18 @@ data class FounderAccountDto(
     val role: String = "it_staff",
     val status: String? = null,
     @SerialName("is_active") val isActive: Boolean? = null,
-    @SerialName("created_at") val createdAt: String? = null
+    @SerialName("created_at") val createdAt: String? = null,
+    @SerialName("quality_system") val qualitySystem: String? = null,
+    @SerialName("tenant_id") val tenantId: String? = null
 )
 
-// Create a new IT staff account
+// Create a new IT staff account — quality_system is required by the backend
 @Serializable
 data class FounderAccountCreateRequest(
     @SerialName("full_name") val fullName: String,
     val email: String,
-    val password: String
+    val password: String,
+    @SerialName("quality_system") val qualitySystem: String
 )
 
 // Rename / re-email an existing IT account

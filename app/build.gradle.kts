@@ -42,11 +42,19 @@ android {
     buildTypes {
         debug {
             isMinifyEnabled = false
+            // Emulator loopback — overrides local.properties for Debug only
+            buildConfigField("String", "BASE_URL", "\"http://10.0.2.2:8000/api/v1/\"")
+            buildConfigField("String", "WS_BASE_URL", "\"ws://10.0.2.2:8000\"")
+            buildConfigField("String", "PIN_HOST", "\"10.0.2.2\"")
+            // Dev cleartext
+            manifestPlaceholders["usesCleartextTraffic"] = "true"
         }
         release {
             // Obfuscate + shrink
             isMinifyEnabled = true
             isShrinkResources = true
+            // Enforce HTTPS
+            manifestPlaceholders["usesCleartextTraffic"] = "false"
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
